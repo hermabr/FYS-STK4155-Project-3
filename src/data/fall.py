@@ -30,8 +30,8 @@ class FallData(Data):
         df = pd.read_csv(os.path.join(filepath, "fall_labels.csv"))
         filenames = df.loc[:, df.columns != "isfall"].values
 
+        #  X = np.zeros((len(filenames), 2, resize[0], resize[1]), dtype=np.float)
         X = np.zeros((len(filenames), 2, resize[0], resize[1]), dtype=np.float)
-        #  X = np.zeros((len(filenames), resize[0], resize[1]), dtype=np.uint8)
         y = df.isfall.values
         y = y.astype(int)
         #  print(y)
@@ -40,25 +40,14 @@ class FallData(Data):
 
         for i, filename in enumerate(filenames):
             for j in range(2):
-                motiongram_np = imageio.imread(os.path.join(filepath, filename[0]))
-                #  mgx = imageio.imread(os.path.join(filepath, filename[1]))
+                motiongram_np = imageio.imread(os.path.join(filepath, filename[j]))
+                # only use one channel since the image is grayscale
                 motiongram_np = motiongram_np[:, :, 0]
                 motiongram_np = motiongram_np.astype(np.double)
                 motiongram_np = sk_resize(motiongram_np, resize)
                 if scale_data:
                     motiongram_np = motiongram_np / np.max(motiongram_np)
                 X[i, j] = motiongram_np
-
-            #  mgx = imageio.imread(os.path.join(filepath, filename[0]))
-            #  #  mgx = imageio.imread(os.path.join(filepath, filename[1]))
-            #  mgx = mgx[:, :, 0]
-            #  mgx = mgx.astype(np.float)
-            #  mgx = sk_resize(mgx, resize)
-            #  if scale_data:
-            #      mgx = mgx / np.max(mgx)
-            #  X[i, 0] = mgx
-            #  #  X[i, 1] = mgx
-            #  #  X[i, 2] = mgx
 
         X, y = self.data_to_torch(X, y)
 

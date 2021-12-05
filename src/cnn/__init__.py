@@ -1,118 +1,76 @@
-import time
 import torch
-import numpy as np
-from data.fall import FallData
+import torchvision
+from tqdm import tqdm
+from data import FallData
+from cnn.model import CNN
+import torch.nn.functional as F
+import torch.optim as optim
 
-#  from cnn import CNNModel
+
+def train(model, device, train_loader, optimizer, epoch):
+    model.train()
+    counter = 0
+    for data, target in train_loader:
+        data = data.float()
+        target = target.to(device)
+        data, target = data.to(device), target.to(device)
+        optimizer.zero_grad()
+        output = model(data)
+        loss = F.nll_loss(output, target)
+        loss.backward()
+        optimizer.step()
+        counter += 1
 
 
-import torch.nn as nn
-from torch.optim import Adam
-from torch.optim.lr_scheduler import CosineAnnealingLR
+def test(model, device, test_loader, epoch):
+    model.eval()
+    test_loss = 0
+    correct = 0
+    with torch.no_grad():
+        for data, target in test_loader:
+            data = data.float()
+            data, target = data.to(device), target.to(device)
+            output = model(data)
+            test_loss += float(F.nll_loss(output, target, reduction="sum").item())
+            print(output[0])
+            # plot output[0]
+            import matplotlib.pyplot as plt
 
-from torchvision.transforms import transforms
+            plt.plot(output[0])
+            plt.show()
+            exit()
+            pred = output.argmax(dim=1, keepdim=True)
+            correct += pred.eq(target.view_as(pred)).sum().item()
+    test_loss /= len(test_loader.dataset)
 
-from cnn.model import Classifier
+    tqdm.write(
+        f"Epoch {epoch}: Average loss: {test_loss:.4f}, Accuracy: {correct}/{len(test_loader.dataset)} ({100.0 * correct / len(test_loader.dataset):.0f}%)"
+    )
 
-#  from cnn.model import CNN as Classifier
 
-#  from cnn_model import CNNModel as Classifier
-from cnn.metrics import (
-    _one_sample_positive_class_precisions,
-    calculate_per_class_lwlrap,
-)
+learning_rate = 0.01
+momentum = 0.5
+device = "cpu"
 
-#  def train_model(, train_transforms):
-def train(data):
-    num_epochs = 80
-    #  batch_size = 64
-    test_batch_size = 256
-    lr = 3e-3
-    eta_min = 1e-5
-    t_max = 10
-    num_classes = 2
 
-    #  num_classes = y_train.shape[1]
-    #
-    #  x_trn, x_val, y_trn, y_val = train_test_split(x_train, y_train, test_size=0.2, random_state=SEED)
-    #
-    #  train_dataset = FATTrainDataset(x_trn, y_trn, train_transforms)
-    #  valid_dataset = FATTrainDataset(x_val, y_val, train_transforms)
-    #
-    #  train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
-    #  valid_loader = DataLoader(valid_dataset, batch_size=test_batch_size, shuffle=False)
-    train_loader = data.train_loader
-    valid_loader = data.test_loader
+def test_training(model, num_epoch=1000):
+    optimizer = optim.SGD(model.parameters(), lr=learning_rate, momentum=momentum)
 
-    #  model = Classifier(num_classes=num_classes).cuda()
-    model = Classifier(num_classes=2)
-    #  criterion = nn.BCEWithLogitsLoss().cuda()
-    criterion = nn.BCEWithLogitsLoss()
-    optimizer = Adam(params=model.parameters(), lr=lr, amsgrad=False)
-    scheduler = CosineAnnealingLR(optimizer, T_max=t_max, eta_min=eta_min)
+    #  data = FallData(test_size=0.2, batch_size=4)
+    data = FallData(test_size=0.2, batch_size=4, resize=(64, 64))
 
-    best_epoch = -1
-    best_lwlrap = 0.0
-    #  mb = master_bar(range(num_epochs))
+    for epoch in tqdm(range(1, num_epoch + 1)):
+        train(model, device, data.train_loader, optimizer, epoch)
+        if epoch % (num_epoch / 10) == 0:
+            test(model, device, data.test_loader, epoch)
 
-    for epoch in range(num_epochs):
-        print("Epoch", epoch)
-        start_time = time.time()
-        model.train()
-        avg_loss = 0.0
-
-        for x_batch, y_batch in train_loader:
-            preds = model(x_batch)
-            loss = criterion(preds, y_batch)
-            #  preds = model(x_batch.cuda())
-            #  loss = criterion(preds, y_batch.cuda())
-
-            optimizer.zero_grad()
-            loss.backward()
-            optimizer.step()
-
-            avg_loss += loss.item() / len(train_loader)
-
-        model.eval()
-        #  valid_preds = np.zeros((len(x_val), num_classes))
-        valid_preds = np.zeros((len(data.x_test), num_classes))
-        avg_val_loss = 0.0
-
-        for i, (x_batch, y_batch) in enumerate(valid_loader):
-            preds = model(x_batch).detach()
-            loss = criterion(preds, y_batch)
-            #  preds = model(x_batch.cuda()).detach()
-            #  loss = criterion(preds, y_batch.cuda())
-
-            preds = torch.sigmoid(preds)
-            valid_preds[
-                i * test_batch_size : (i + 1) * test_batch_size
-            ] = preds.cpu().numpy()
-
-            avg_val_loss += loss.item() / len(valid_loader)
-
-        score, weight = calculate_per_class_lwlrap(y_val, valid_preds)
-        lwlrap = (score * weight).sum()
-
-        scheduler.step()
-
-        if (epoch + 1) % 5 == 0:
-            elapsed = time.time() - start_time
-
-        if lwlrap > best_lwlrap:
-            best_epoch = epoch + 1
-            best_lwlrap = lwlrap
-            torch.save(model.state_dict(), "weight_best.pt")
-
-    return {
-        "best_epoch": best_epoch,
-        "best_lwlrap": best_lwlrap,
-    }
+    print("\nPerformance on training data:")
+    test(model, device, data.train_loader, num_epoch)
 
 
 def main():
-    from cnn.test import main_test
+    model = CNN(channels=2).to(device)
+    test_training(model, num_epoch=200)
 
-    main_test()
-    #  data = FallData(test_size=0.2)
-    #  result = train(data)
+    #  model = Binary_Classifier().to(device)
+    #  test_training(model, num_epoch=10)
