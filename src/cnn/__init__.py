@@ -32,13 +32,6 @@ def test(model, device, test_loader, epoch):
             data, target = data.to(device), target.to(device)
             output = model(data)
             test_loss += float(F.nll_loss(output, target, reduction="sum").item())
-            print(output[0])
-            # plot output[0]
-            import matplotlib.pyplot as plt
-
-            plt.plot(output[0])
-            plt.show()
-            exit()
             pred = output.argmax(dim=1, keepdim=True)
             correct += pred.eq(target.view_as(pred)).sum().item()
     test_loss /= len(test_loader.dataset)
@@ -59,6 +52,7 @@ def test_training(model, num_epoch=1000):
     #  data = FallData(test_size=0.2, batch_size=4)
     data = FallData(test_size=0.2, batch_size=4, resize=(64, 64))
 
+    test(model, device, data.train_loader, num_epoch)
     for epoch in tqdm(range(1, num_epoch + 1)):
         train(model, device, data.train_loader, optimizer, epoch)
         if epoch % (num_epoch / 10) == 0:
