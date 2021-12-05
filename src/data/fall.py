@@ -31,9 +31,9 @@ class FallData(Data):
         filenames = df.loc[:, df.columns != "isfall"].values
 
         #  X = np.zeros((len(filenames), 2, resize[0], resize[1]), dtype=np.float)
-        X = np.zeros((len(filenames), 2, resize[0], resize[1]), dtype=np.float)
+        X = np.zeros((len(filenames), 2, resize[0], resize[1]), dtype=np.float32)
         y = df.isfall.values
-        y = y.astype(int)
+        y = y.astype(np.float32)
         #  print(y)
         #  exit()
         # read png files from filenames
