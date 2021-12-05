@@ -48,7 +48,6 @@ def train(data):
 
     for epoch in range(num_epochs):
         for i, (images, labels) in enumerate(data.train_loader):
-
             train = Variable(images.view(100, 1, 28, 28))
             labels = Variable(labels)
 

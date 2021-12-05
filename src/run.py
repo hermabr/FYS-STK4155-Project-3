@@ -1,9 +1,11 @@
+import torch
 import argparse
 import numpy as np
-from data import DigitsData, FrankeData
+from data import FrankeData, FallData
 
 #  import neural_network
 #  from ann import ANNModel
+#  from analysis import cnn
 import cnn
 from FFNN import FeedForwardNeuralNetwork
 from layers import ReluLayer, LinearLayer
@@ -14,18 +16,35 @@ from regression import OrdinaryLeastSquares, Ridge, Lasso
 
 from analysis import bias_variance
 
+SEED = 42
+
 
 def test_data():
     data = FrankeData(400, test_size=0.2)
+    data = FallData(test_size=0.2)
+
     #  data = DigitsData(test_size=0.2)
     #  print(data.n_features)
+
+
+def test_cnn():
+    cnn.main()
+    #  data = FallData(test_size=0.2)
+    #  cnn.train(data)
 
 
 if __name__ == "__main__":
     #  test_data()
     #  exit()
+    #  test_data()
+    #  print("Stopping after testing fall data..")
+    #  exit()
 
-    np.random.seed(42)
+    np.random.seed(SEED)
+    torch.manual_seed(SEED)
+
+    test_cnn()
+    exit()
 
     parser = argparse.ArgumentParser(
         description="To run the bias-variance tradeoff experiment"
