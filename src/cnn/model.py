@@ -29,3 +29,37 @@ class CNN(nn.Module):
         x = torch.sigmoid(x)
         return x
         #  return F.log_softmax(x)
+
+
+def train(model, train_loader, optimizer, loss_fn):
+    model.train()
+    counter = 0
+    for data, target in train_loader:
+        optimizer.zero_grad()
+        output = model(data)
+        target = target.view_as(output)
+        loss = loss_fn(output, target)
+        loss.backward()
+        optimizer.step()
+        counter += 1
+
+
+def test(model, test_loader, epoch, loss_fn, verbose=False):
+    model.eval()
+    test_loss = 0
+    correct = 0
+    with torch.no_grad():
+        for data, target in test_loader:
+            output = model(data)
+            target = target.view_as(output)
+            test_loss += loss_fn(output, target).item()
+            pred = output.round()
+            correct += pred.eq(target.view_as(pred)).sum().item()
+    test_loss /= len(test_loader.dataset)
+
+    if verbose:
+        tqdm.write(
+            f"Epoch {epoch}: Average loss: {test_loss:.4f}, Accuracy: {correct}/{len(test_loader.dataset)} ({100.0 * correct / len(test_loader.dataset):.0f}%)"
+        )
+
+    return test_loss

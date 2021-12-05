@@ -3,18 +3,12 @@ import argparse
 import numpy as np
 from data import FrankeData, FallData
 
-#  import neural_network
-#  from ann import ANNModel
-#  from analysis import cnn
-import cnn
-from FFNN import FeedForwardNeuralNetwork
-from layers import ReluLayer, LinearLayer
+#  from FFNN import FeedForwardNeuralNetwork
+#  from layers import ReluLayer, LinearLayer
+#  from bias_variance import bootstrap_bias_variance
+#  from regression import OrdinaryLeastSquares, Ridge, Lasso
 
-from bias_variance import bootstrap_bias_variance
-
-from regression import OrdinaryLeastSquares, Ridge, Lasso
-
-from analysis import bias_variance
+from analysis import linear_regression, cnn, ffnn, bias_variance
 
 SEED = 42
 
@@ -23,19 +17,8 @@ def test_data():
     data = FrankeData(400, test_size=0.2)
     data = FallData(test_size=0.2)
 
-    #  data = DigitsData(test_size=0.2)
-    #  print(data.n_features)
-
-
-def test_cnn():
-    cnn.main()
-    #  data = FallData(test_size=0.2)
-    #  cnn.train(data)
-
 
 if __name__ == "__main__":
-    #  test_data()
-    #  exit()
     #  test_data()
     #  print("Stopping after testing fall data..")
     #  exit()
@@ -43,11 +26,26 @@ if __name__ == "__main__":
     np.random.seed(SEED)
     torch.manual_seed(SEED)
 
-    test_cnn()
-    exit()
-
     parser = argparse.ArgumentParser(
         description="To run the bias-variance tradeoff experiment"
+    )
+    parser.add_argument(
+        "-l",
+        "--linear",
+        action="store_true",
+        help="To run the linear regression analysis",
+    )
+    parser.add_argument(
+        "-c",
+        "--cnn",
+        action="store_true",
+        help="To run the cnn analysis",
+    )
+    parser.add_argument(
+        "-f",
+        "--ffnn",
+        action="store_true",
+        help="To run the ffnn analysis",
     )
     parser.add_argument(
         "-bv",
@@ -67,8 +65,15 @@ if __name__ == "__main__":
         parser.print_help()
         exit(0)
 
+    if args.linear or args.all:
+        linear_regression.main()
+    if args.cnn or args.all:
+        cnn.main()
+    if args.ffnn or args.all:
+        ffnn.main()
     if args.biasvariance or args.all:
         bias_variance.main()
+
         #  biases, variances = [], []
         #  degrees = list(range(1, 11))
         #  #  for degree in degrees:

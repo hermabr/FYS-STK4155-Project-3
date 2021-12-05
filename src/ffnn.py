@@ -10,7 +10,6 @@ class FeedForwardNeuralNetwork:
         hidden_sizes,
         n_categories=1,
         hidden_layers=SigmoidLayer,
-        final_layer=LinearLayer,
         classification=False,
         epochs=1000,
         learning_rate=0.001,
@@ -52,6 +51,11 @@ class FeedForwardNeuralNetwork:
         self.epochs = epochs
         self.verbose = verbose
         self.learning_rate = learning_rate
+
+        if self.classification:
+            final_layer = SigmoidLayer
+        else:
+            final_layer = LinearLayer
 
         self.layers.append(LinearLayer(1, 1))
         for i in range(len(self.sizes) - 1):

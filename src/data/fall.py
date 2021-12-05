@@ -12,10 +12,10 @@ class FallData(Data):
         self,
         test_size=None,
         scale_data=True,
-        #  resize=(64, 64),
-        resize=(28, 28),
+        resize=(64, 64),
         filepath="data/fall",
         batch_size=64,
+        for_pytorch=True,
     ):
         super().__init__()
 
@@ -30,13 +30,9 @@ class FallData(Data):
         df = pd.read_csv(os.path.join(filepath, "fall_labels.csv"))
         filenames = df.loc[:, df.columns != "isfall"].values
 
-        #  X = np.zeros((len(filenames), 2, resize[0], resize[1]), dtype=np.float)
         X = np.zeros((len(filenames), 2, resize[0], resize[1]), dtype=np.float32)
         y = df.isfall.values
         y = y.astype(np.float32)
-        #  print(y)
-        #  exit()
-        # read png files from filenames
 
         for i, filename in enumerate(filenames):
             for j in range(2):
@@ -49,10 +45,15 @@ class FallData(Data):
                     motiongram_np = motiongram_np / np.max(motiongram_np)
                 X[i, j] = motiongram_np
 
-        X, y = self.data_to_torch(X, y)
+        if for_pytorch:
+            X, y = self.data_to_torch(X, y)
+        else:
+            X = X.reshape(X.shape[0], X.shape[1] * X.shape[2] * X.shape[3])
 
         self.store_data(X, y, test_size)
-        self.create_train_test_loader(batch_size)
+
+        if for_pytorch:
+            self.create_train_test_loader(batch_size)
 
     def create_csv(self, filepath, random_seed=42):
         if random_seed:
