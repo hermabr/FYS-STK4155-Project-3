@@ -1,4 +1,5 @@
 import torch
+from tqdm import tqdm
 import torch.nn as nn
 import torch.nn.functional as F
 
@@ -28,7 +29,6 @@ class CNN(nn.Module):
         x = self.fc2(x)
         x = torch.sigmoid(x)
         return x
-        #  return F.log_softmax(x)
 
 
 def train(model, train_loader, optimizer, loss_fn):
@@ -62,4 +62,4 @@ def test(model, test_loader, epoch, loss_fn, verbose=False):
             f"Epoch {epoch}: Average loss: {test_loss:.4f}, Accuracy: {correct}/{len(test_loader.dataset)} ({100.0 * correct / len(test_loader.dataset):.0f}%)"
         )
 
-    return test_loss
+    return test_loss, correct / len(test_loader.dataset)

@@ -1,4 +1,5 @@
 import numpy as np
+from tqdm import tqdm
 
 
 def bootstrap_bias_variance(model, data, bootstrap_N):
@@ -21,7 +22,7 @@ def bootstrap_bias_variance(model, data, bootstrap_N):
     #  bootstrap_z_tilde = np.zeros((bootstrap_N, N))
     bootstrap_z_tilde = np.empty((bootstrap_N, len(data.y_test)))
 
-    for i in range(bootstrap_N):
+    for i in tqdm(range(bootstrap_N), leave=False):
         indices = np.random.randint(0, N, N)
 
         X_train = data.X_train[indices]
@@ -30,7 +31,11 @@ def bootstrap_bias_variance(model, data, bootstrap_N):
         model.fit(X_train, y_train)
         bootstrap_z_tilde[i] = model.predict(data.X_test)
 
-    return bias(data.y_test, bootstrap_z_tilde), variance(bootstrap_z_tilde)
+    return (
+        bias(data.y_test, bootstrap_z_tilde),
+        variance(bootstrap_z_tilde),
+        mse(data.y_test, bootstrap_z_tilde),
+    )
 
 
 def bias(z, z_tilde):
@@ -65,3 +70,21 @@ def variance(z_tilde):
             The variance of the z_tilde
     """
     return np.mean(np.var(z_tilde, axis=1))
+
+
+def mse(z, z_tilde):
+    """Calculates the mean squared error
+
+    Parameters
+    ----------
+        z : np.array
+            The z-values for which to calculate the mean squared error
+        z_tilde : np.array
+            The predicted z-tilde-values for which to calculate the mean squared error
+
+    Returns
+    -------
+        mse : float
+            The mean squared error of the z and z_tilde
+    """
+    return np.mean(np.mean((z - z_tilde) ** 2, axis=0))

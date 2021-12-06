@@ -1,21 +1,22 @@
+import numpy as np
+from tqdm import tqdm
 from data import FallData
-from ffnn import FeedForwardNeuralNetwork
-from layers import LinearLayer, LeakyReluLayer
+from sklearn.neural_network import MLPClassifier
 
 
 def main():
-    data = FallData(test_size=0.2, for_pytorch=False)
+    for test_size in tqdm(np.arange(0.1, 1, 0.1)):
+        data = FallData(test_size=test_size, for_pytorch=False)
+        net = MLPClassifier(
+            solver="lbfgs",
+            alpha=1e-3,
+            hidden_layer_sizes=(100, 100, 100, 100),
+            random_state=1,
+        )
 
-    net = FeedForwardNeuralNetwork(
-        data.X_train.shape[1],
-        [100] * 3,
-        classification=True,
-        epochs=1000,
-        learning_rate=0.01,
-        lambda_=0.001,
-    )
+        net.fit(data.X_train, data.y_train)
 
-    net.fit(data.X_train, data.y_train)
-
-    z_tilde = net.predict(data.X_test)
-    print(f"{sum(z_tilde == data.y_test) / len(z_tilde) * 100:.0f}")
+        z_tilde = net.predict(data.X_test)
+        print(
+            f"{test_size*100:.0f}%: {sum(z_tilde == data.y_test) / len(z_tilde)*100:.0f}%"
+        )
