@@ -14,7 +14,9 @@ df = pd.read_csv(f"output/data/{filename}")
 x = df[x_name]
 y = df.loc[:, df.columns != x_name]
 for column in y.columns:
+    print(min(df[column]))
     print(sum(df[column]) / len(df))
+    print()
 
 #  file_informations = [
 #      {

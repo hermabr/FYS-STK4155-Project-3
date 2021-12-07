@@ -9,10 +9,6 @@ import matplotlib.pyplot as plt
 
 def train_model(data, num_epoch=150):
     learning_rate = 0.002
-    #  learning_rate = 0.002
-    #  learning_rate = 0.003
-    #  learning_rate = 0.005
-    #  learning_rate = 0.01
     momentum = 0.5
     loss_fn = nn.BCELoss()
 
@@ -24,19 +20,16 @@ def train_model(data, num_epoch=150):
         train(model, data.train_loader, optimizer, loss_fn)
         if epoch % 10 == 0:
             #  if epoch == num_epoch - 1:
-            loss, accuracy = test(
+            loss, accuracy, all_targets, all_predictions = test(
                 model, data.test_loader, epoch, loss_fn, verbose=False
             )
             losses.append(loss)
 
             if accuracy >= 0.99:
-                tqdm.write("BROKE")
+                #  tqdm.write("BROKE")
                 break
 
-    if accuracy != 1:
-        print("NJET", accuracy)
-    #  loss, accuracy = test(model, data.test_loader, 100, loss_fn, verbose=False)
-    return accuracy, losses
+    return accuracy, losses, all_targets, all_predictions
 
 
 def main():
@@ -66,7 +59,7 @@ def main():
             transform=SHOULD_TRANSFORM,
         )
 
-        accuracy, losses = train_model(data, 200)
+        accuracy, losses, all_targets, all_predictions = train_model(data, 200)
         total_accuracy += accuracy
         all_losses.append(losses)
 

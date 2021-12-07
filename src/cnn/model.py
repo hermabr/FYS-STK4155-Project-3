@@ -1,4 +1,5 @@
 import torch
+import numpy as np
 from tqdm import tqdm
 import torch.nn as nn
 import torch.nn.functional as F
@@ -48,6 +49,8 @@ def test(model, test_loader, epoch, loss_fn, verbose=False):
     model.eval()
     test_loss = 0
     correct = 0
+    all_targets = np.array([])
+    all_predictions = np.array([])
     with torch.no_grad():
         for data, target in test_loader:
             output = model(data)
@@ -55,6 +58,9 @@ def test(model, test_loader, epoch, loss_fn, verbose=False):
             test_loss += loss_fn(output, target).item()
             pred = output.round()
             correct += pred.eq(target.view_as(pred)).sum().item()
+
+            all_targets = np.append(all_targets, target.numpy())
+            all_predictions = np.append(all_predictions, pred.numpy())
     test_loss /= len(test_loader.dataset)
 
     if verbose:
@@ -62,4 +68,9 @@ def test(model, test_loader, epoch, loss_fn, verbose=False):
             f"Epoch {epoch}: Average loss: {test_loss:.4f}, Accuracy: {correct}/{len(test_loader.dataset)} ({100.0 * correct / len(test_loader.dataset):.0f}%)"
         )
 
-    return test_loss, correct / len(test_loader.dataset)
+    return (
+        test_loss,
+        correct / len(test_loader.dataset),
+        all_targets,
+        all_predictions,
+    )
