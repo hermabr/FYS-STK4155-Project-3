@@ -61,6 +61,11 @@ if __name__ == "__main__":
         action="store_true",
     )
 
+    #  for seed in range(1, 100):
+    #      np.random.seed(seed)
+    #      torch.manual_seed(seed)
+    #      print(f"Seed: {seed}")
+
     args = parser.parse_args()
     if not any(vars(args).values()):
         parser.print_help()
@@ -76,9 +81,9 @@ if __name__ == "__main__":
         if args.all:
             print("Analysis for pytorch cnn")
         pytorch.main()
-        if args.all:
-            print("Analysis for tensorflow cnn")
-        tensorflow.main()
+        #  if args.all:
+        #      print("Analysis for tensorflow cnn")
+        #  tensorflow.main()
     if args.ffnn or args.all:
         if args.all:
             print("Analysis for ffnn")

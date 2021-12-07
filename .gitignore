@@ -3,6 +3,7 @@ test.py
 test2.py
 .DS_Store
 makefile
+notes.md
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

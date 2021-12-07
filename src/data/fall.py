@@ -1,10 +1,15 @@
 import os
+import torch
 import random
 import imageio
 import numpy as np
 import pandas as pd
 from data.abstract_data import Data
+from data.pytorch_dataset import PytorchDataset
 from skimage.transform import resize as sk_resize
+
+#  from torchvision.transforms import transforms
+#  from torch.utils.data import Dataset
 
 
 class FallData(Data):
@@ -17,9 +22,11 @@ class FallData(Data):
         batch_size=64,
         for_pytorch=False,
         for_tensorflow=False,
+        transform=True,
     ):
         super().__init__()
 
+        assert test_size is not None, "test_size must be specified"
         assert os.path.exists(filepath), "Filepath does not exist"
         assert os.path.exists(
             os.path.join(filepath, "fall_labels.csv")
@@ -61,7 +68,7 @@ class FallData(Data):
         if for_tensorflow:
             self.create_train_test_loader_tensorflow(batch_size)
         elif for_pytorch:
-            self.create_train_test_loader(batch_size)
+            self.create_train_test_loader(batch_size, transform)
 
     def create_csv(self, filepath, random_seed=42):
         if random_seed:
@@ -87,3 +94,29 @@ class FallData(Data):
             random.shuffle(lines)
             for line in lines:
                 f.write(",".join(line) + "\n")
+
+    #  def __len__(self):
+    #      return len(self.X_train)
+    #
+    #  def __getitem__(self, idx):
+    #      if self.transform:
+    #          X = self.X_train[idx]
+    #
+    #          transformation = transforms.Compose(
+    #              [
+    #                  transforms.ToPILImage(),
+    #                  transforms.RandomHorizontalFlip(),
+    #                  transforms.RandomRotation(20),
+    #                  transforms.ToTensor(),
+    #                  #  transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225]),
+    #                  #  transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225]),
+    #                  transforms.Normalize([0.485, 0.456], [0.229, 0.224]),
+    #              ]
+    #          )
+    #
+    #          return transformation(X), self.y_train[idx]
+    #          #  for i in range(X.shape[0]):
+    #          #      X[i] = transformation(X[i])
+    #          #  return X, self.y_train[idx]
+    #
+    #      return self.X_train[idx], self.y_train[idx]

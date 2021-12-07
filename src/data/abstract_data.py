@@ -2,6 +2,8 @@ import torch
 import numpy as np
 import tensorflow as tf
 from sklearn.model_selection import train_test_split
+from data.pytorch_dataset import PytorchDataset
+from torch.utils.data import DataLoader
 
 
 class Data:
@@ -50,7 +52,7 @@ class Data:
                 self._y_test,
             ) = train_test_split(X, y, test_size=test_size)
 
-    def create_train_test_loader(self, batch_size):
+    def create_train_test_loader(self, batch_size, transform=True):
         """Creates a train and test loader for the data
 
         Parameters
@@ -66,16 +68,38 @@ class Data:
                 The test loader for the data
         """
         assert self.X_train is not None, "X_train is None"
-        self.train_loader = torch.utils.data.DataLoader(
-            torch.utils.data.TensorDataset(self.X_train, self.y_train),
-            batch_size=batch_size,
-            shuffle=True,
+
+        train_dataset = PytorchDataset(
+            self.X_train,
+            self.y_train,
+            is_train=True if transform else None,
+            transform=transform,
         )
-        self.test_loader = torch.utils.data.DataLoader(
-            torch.utils.data.TensorDataset(self.X_test, self.y_test),
-            batch_size=batch_size,
-            shuffle=True,
+
+        test_dataset = PytorchDataset(
+            self.X_test,
+            self.y_test,
+            is_train=False if transform else None,
+            transform=transform,
         )
+
+        self.train_loader = DataLoader(
+            train_dataset, batch_size=batch_size, shuffle=True
+        )
+        self.test_loader = DataLoader(
+            test_dataset, batch_size=batch_size, shuffle=False
+        )
+
+        #  self.train_loader = torch.utils.data.DataLoader(
+        #      torch.utils.data.TensorDataset(self.X_train, self.y_train),
+        #      batch_size=batch_size,
+        #      shuffle=True,
+        #  )
+        #  self.test_loader = torch.utils.data.DataLoader(
+        #      torch.utils.data.TensorDataset(self.X_test, self.y_test),
+        #      batch_size=batch_size,
+        #      shuffle=True,
+        #  )
         #  self.train_loader = train_loader
         #  self.test_loader = test_loader
 
