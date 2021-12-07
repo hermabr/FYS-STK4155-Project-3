@@ -1,3 +1,4 @@
+import os
 import torch
 import argparse
 import numpy as np
@@ -9,6 +10,8 @@ from analysis import logistic, pytorch, ffnn, bias_variance, tensorflow, test_si
 SEED = 42
 
 if __name__ == "__main__":
+    os.system("clear")  # TODO: REMOVE THIS LINE!
+
     np.random.seed(SEED)
     torch.manual_seed(SEED)
 
@@ -66,17 +69,21 @@ if __name__ == "__main__":
     if args.test_size or args.all:
         test_sizes.main()
     if args.logistic or args.all:
-        print("Analysis for logistic regression")
+        if args.all:
+            print("Analysis for logistic regression")
         logistic.main()
     if args.cnn or args.all:
-        print("Analysis for pytorch cnn")
+        if args.all:
+            print("Analysis for pytorch cnn")
         pytorch.main()
-        exit()
-        print("Analysis for tensorflow cnn")
+        if args.all:
+            print("Analysis for tensorflow cnn")
         tensorflow.main()
     if args.ffnn or args.all:
-        print("Analysis for ffnn")
+        if args.all:
+            print("Analysis for ffnn")
         ffnn.main()
     if args.biasvariance or args.all:
-        print("Analysis for bias-variance tradeoff")
+        if args.all:
+            print("Analysis for bias-variance tradeoff")
         bias_variance.main()
