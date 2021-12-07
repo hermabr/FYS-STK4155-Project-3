@@ -75,7 +75,7 @@ class FrankeData(Data):
 
         X = self.generate_design_matrix(x, y)
 
-        super().store_data(X, z, test_size)
+        super().store_data(X, z, test_size, stratify=False)
 
     def get_number_of_parameters(self):
         return int((self.degree + 1) * (self.degree + 2) / 2)

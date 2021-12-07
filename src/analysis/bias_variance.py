@@ -29,7 +29,9 @@ def bias_variance_analysis_ols():
     mses, biases, variances = [], [], []
     degrees = list(range(1, 11))
     for degree in degrees:
-        data = FrankeData(config.DATA_SIZE, degree=degree, test_size=config.TEST_SIZE)
+        data = FrankeData(
+            config.DATA_SIZE, degree=degree, test_size=config.BIAS_VARIANCE_TEST_SIZE
+        )
         bias, variance, mse = bootstrap_bias_variance(
             OrdinaryLeastSquares(), data, config.BIAS_VARIANCE_BOOTSTRAP_SIZE
         )
@@ -43,9 +45,9 @@ def bias_variance_analysis_ols():
 
 def bias_variance_analysis_mlp_layer_size():
     mses, biases, variances = [], [], []
-    data = FrankeData(config.DATA_SIZE, test_size=config.TEST_SIZE)
+    data = FrankeData(config.DATA_SIZE, test_size=config.BIAS_VARIANCE_TEST_SIZE)
     layer_sizes = list(range(10, 100, 10))
-    for layer_size in layer_sizes:
+    for layer_size in tqdm(layer_sizes):
         bias, variance, mse = bootstrap_bias_variance(
             MLPRegressor(
                 hidden_layer_sizes=(layer_size for _ in range(3)), max_iter=1000
@@ -69,9 +71,9 @@ def bias_variance_analysis_mlp_layer_size():
 
 def bias_variance_analysis_mlp_number_of_layers():
     mses, biases, variances = [], [], []
-    data = FrankeData(config.DATA_SIZE, test_size=config.TEST_SIZE)
+    data = FrankeData(config.DATA_SIZE, test_size=config.BIAS_VARIANCE_TEST_SIZE)
     number_of_layers_list = list(range(1, 6))
-    for number_of_layers in number_of_layers_list:
+    for number_of_layers in tqdm(number_of_layers_list):
         bias, variance, mse = bootstrap_bias_variance(
             MLPRegressor(
                 hidden_layer_sizes=(50 for _ in range(number_of_layers)), max_iter=1000
@@ -101,9 +103,10 @@ def bias_variance_analysis_mlp():
 
 def bias_variance_analysis_ensamble():
     mses, biases, variances = [], [], []
-    data = FrankeData(config.DATA_SIZE, test_size=config.TEST_SIZE)
+    data = FrankeData(config.DATA_SIZE, test_size=config.BIAS_VARIANCE_TEST_SIZE)
     #  for size in range(10, 1100, 100):
-    for depth in range(1, 7):
+    depths = list(range(1, 11))
+    for depth in depths:
         bias, variance, mse = bootstrap_bias_variance(
             GradientBoostingRegressor(max_depth=depth),
             data,
@@ -115,12 +118,20 @@ def bias_variance_analysis_ensamble():
 
         tqdm.write(f"{mse} {bias} {variance}")
 
-    plot(mses, biases, variances, "A")
+    write_to_file(
+        "bias_variance_ensamble.csv",
+        depths,
+        mses,
+        biases,
+        variances,
+        "depth",
+    )
+    #  plot(mses, biases, variances, "A")
 
 
 def main():
     print(f"Running with boostrap size: {config.BIAS_VARIANCE_BOOTSTRAP_SIZE}")
 
-    #  bias_variance_analysis_ols()
+    bias_variance_analysis_ols()
     bias_variance_analysis_mlp()
-    #  bias_variance_analysis_ensamble()
+    bias_variance_analysis_ensamble()

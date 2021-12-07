@@ -19,29 +19,41 @@ def write_out(name, test_size, accuracy):
 
 def main():
     accuracy_texts = []
+    N = 1000
 
-    for i in range(100):
+    for i in range(N):
+        print(i)
         #  for i in range(1):
         test_size = 0.2
         #  for test_size in tqdm(np.arange(0.1, 1, 0.1)):
         data = FallData(test_size=test_size)
-        data_pytorch = FallData(test_size=test_size, for_pytorch=True)
-        data_tensorflow = FallData(test_size=test_size, for_tensorflow=True)
+        data_pytorch_transform = FallData(
+            test_size=test_size, batch_size=4, for_pytorch=True, transform=True
+        )
+        data_pytorch_no_transform = FallData(
+            test_size=test_size, batch_size=4, for_pytorch=True, transform=False
+        )
+
+        #  data_tensorflow = FallData(test_size=test_size, for_tensorflow=True)
 
         #  # Logistic regression
-        #  logreg = LogisticRegression()
-        #  logreg.fit(data.X_train, data.y_train)
-        #  z_tilde = logreg.predict(data.X_test)
-        accuracy_logistic = 0
-        #  accuracy_logistic = accuracy_metric(data.y_test, z_tilde)
-        #  write_out("Logistic", test_size, accuracy_logistic)
+        logreg = LogisticRegression()
+        logreg.fit(data.X_train, data.y_train)
+        z_tilde = logreg.predict(data.X_test)
+        accuracy_logistic = accuracy_metric(data.y_test, z_tilde)
+        write_out("Logistic", test_size, accuracy_logistic)
 
-        #  # Pytorch cnn
-        accuracy_pytorch = pytorch.train_model(data_pytorch)
-        write_out("Pytorch", test_size, accuracy_pytorch)
+        #  # Pytorch cnn with transform
+        accuracy_pytorch_transform, losses = pytorch.train_model(data_pytorch_transform)
+        write_out("Pytorch", test_size, accuracy_pytorch_transform)
+
+        #  # Pytorch cnn without transform
+        accuracy_pytorch_no_transform, losses = pytorch.train_model(
+            data_pytorch_no_transform
+        )
+        write_out("Pytorch no transform", test_size, accuracy_pytorch_no_transform)
 
         # Tensorflow cnn
-        accuracy_tensorflow = 0.1
         #  model = get_model()
         #  model.fit(
         #      data_tensorflow.train_dataset,
@@ -56,16 +68,16 @@ def main():
 
         # Feed forward neural network
         accuracy_ffnn = 0.2
-        #  net = MLPClassifier(
-        #      solver="lbfgs",
-        #      alpha=1e-3,
-        #      hidden_layer_sizes=(100, 100, 100, 100),
-        #      random_state=1,
-        #  )
-        #  net.fit(data.X_train, data.y_train)
-        #  z_tilde = net.predict(data.X_test)
-        #  accuracy_ffnn = accuracy_metric(data.y_test, z_tilde)
-        #  write_out("MLP", test_size, accuracy_ffnn)
+        net = MLPClassifier(
+            solver="lbfgs",
+            alpha=1e-3,
+            hidden_layer_sizes=(100, 100, 100, 100),
+            random_state=1,
+        )
+        net.fit(data.X_train, data.y_train)
+        z_tilde = net.predict(data.X_test)
+        accuracy_ffnn = accuracy_metric(data.y_test, z_tilde)
+        write_out("MLP", test_size, accuracy_ffnn)
 
         #  if (
         #      accuracy_logistic == accuracy_pytorch
@@ -76,7 +88,7 @@ def main():
         #      exit()
 
         accuracy_texts.append(
-            f"{i}){test_size:.1f},{accuracy_logistic*100},{accuracy_pytorch*100},{accuracy_tensorflow*100},{accuracy_ffnn*100}\n"
+            f"{i}){test_size:.1f},{accuracy_logistic*100},{accuracy_pytorch_transform*100},{accuracy_pytorch_no_transform*100},{accuracy_ffnn*100}\n"
             #  f"{i}){test_size:.1f},{accuracy_logistic*100},{accuracy_pytorch*100},{accuracy_ffnn*100}\n"
         )
 
@@ -85,7 +97,7 @@ def main():
         #  )
 
     with open("output/data/test_size_performance.csv", "w") as f:
-        f.write("test_size,logistic,pytorch cnn,tensorflow cnn,ffnn\n")
+        f.write("test_size,logistic,cnn with transform,cnn without transform,ffnn\n")
         #  f.write("test_size,logistic,pytorch cnn,ffnn\n")
         for line in accuracy_texts:
             f.write(line)

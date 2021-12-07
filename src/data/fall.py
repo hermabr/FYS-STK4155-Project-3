@@ -8,9 +8,6 @@ from data.abstract_data import Data
 from data.pytorch_dataset import PytorchDataset
 from skimage.transform import resize as sk_resize
 
-#  from torchvision.transforms import transforms
-#  from torch.utils.data import Dataset
-
 
 class FallData(Data):
     def __init__(

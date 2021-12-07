@@ -28,7 +28,7 @@ class Data:
         data -= np.mean(data)
         return data
 
-    def store_data(self, X, y, test_size):
+    def store_data(self, X, y, test_size, stratify=True):
         """Stores the data, either as only X, and y, or splitting the X, and z in train/test and saving all
 
         Parameters
@@ -45,12 +45,20 @@ class Data:
             self._X = X
             self._y = y
         else:
+            #  diff = 3
+            #  while diff >= 2:
             (
                 self._X_train,
                 self._X_test,
                 self._y_train,
                 self._y_test,
-            ) = train_test_split(X, y, test_size=test_size)
+            ) = train_test_split(
+                X, y, test_size=test_size, stratify=y if stratify else None
+            )
+
+            #  a = self._y_test
+            #  diff = np.abs(len(a) - a.sum() * 2)
+            #  print(a.sum(), len(a))
 
     def create_train_test_loader(self, batch_size, transform=True):
         """Creates a train and test loader for the data

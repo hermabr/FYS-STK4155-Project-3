@@ -1,0 +1,2649 @@
+[H[JLogistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 85.71%
+Logistic test size 20%:	 Accuracy: 85.71%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch no transform test size 20%:	 Accuracy: 92.86%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch no transform test size 20%:	 Accuracy: 92.86%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+NJET 0.8571428571428571
+Pytorch test size 20%:	 Accuracy: 85.71%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 78.57%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 85.71%
+Logistic test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch no transform test size 20%:	 Accuracy: 92.86%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 85.71%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+NJET 0.8571428571428571
+Pytorch test size 20%:	 Accuracy: 85.71%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 85.71%
+Logistic test size 20%:	 Accuracy: 78.57%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 78.57%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 85.71%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 85.71%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.7857142857142857
+Pytorch no transform test size 20%:	 Accuracy: 78.57%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 85.71%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+NJET 0.9285714285714286
+Pytorch test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.8571428571428571
+Pytorch no transform test size 20%:	 Accuracy: 85.71%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.8571428571428571
+Pytorch no transform test size 20%:	 Accuracy: 85.71%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.8571428571428571
+Pytorch no transform test size 20%:	 Accuracy: 85.71%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch no transform test size 20%:	 Accuracy: 92.86%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch no transform test size 20%:	 Accuracy: 92.86%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.8571428571428571
+Pytorch no transform test size 20%:	 Accuracy: 85.71%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+NJET 0.7857142857142857
+Pytorch test size 20%:	 Accuracy: 78.57%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+NJET 0.8571428571428571
+Pytorch test size 20%:	 Accuracy: 85.71%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch no transform test size 20%:	 Accuracy: 92.86%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch test size 20%:	 Accuracy: 92.86%
+NJET 0.7857142857142857
+Pytorch no transform test size 20%:	 Accuracy: 78.57%
+MLP test size 20%:	 Accuracy: 85.71%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 85.71%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 85.71%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch no transform test size 20%:	 Accuracy: 92.86%
+MLP test size 20%:	 Accuracy: 85.71%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch no transform test size 20%:	 Accuracy: 92.86%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch no transform test size 20%:	 Accuracy: 92.86%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+NJET 0.9285714285714286
+Pytorch test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.8571428571428571
+Pytorch no transform test size 20%:	 Accuracy: 85.71%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 78.57%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+NJET 0.9285714285714286
+Pytorch test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 85.71%
+Logistic test size 20%:	 Accuracy: 92.86%
+NJET 0.9285714285714286
+Pytorch test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch no transform test size 20%:	 Accuracy: 92.86%
+MLP test size 20%:	 Accuracy: 85.71%
+Logistic test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.8571428571428571
+Pytorch no transform test size 20%:	 Accuracy: 85.71%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+NJET 0.8571428571428571
+Pytorch test size 20%:	 Accuracy: 85.71%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 85.71%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 85.71%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch no transform test size 20%:	 Accuracy: 92.86%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch test size 20%:	 Accuracy: 92.86%
+NJET 0.7857142857142857
+Pytorch no transform test size 20%:	 Accuracy: 78.57%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch no transform test size 20%:	 Accuracy: 92.86%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.8571428571428571
+Pytorch no transform test size 20%:	 Accuracy: 85.71%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 85.71%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch no transform test size 20%:	 Accuracy: 92.86%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch no transform test size 20%:	 Accuracy: 92.86%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 85.71%
+NJET 0.8571428571428571
+Pytorch test size 20%:	 Accuracy: 85.71%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch no transform test size 20%:	 Accuracy: 92.86%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.8571428571428571
+Pytorch no transform test size 20%:	 Accuracy: 85.71%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 85.71%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+NJET 0.9285714285714286
+Pytorch test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 85.71%
+Logistic test size 20%:	 Accuracy: 92.86%
+NJET 0.8571428571428571
+Pytorch test size 20%:	 Accuracy: 85.71%
+NJET 0.8571428571428571
+Pytorch no transform test size 20%:	 Accuracy: 85.71%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 85.71%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.7857142857142857
+Pytorch no transform test size 20%:	 Accuracy: 78.57%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 85.71%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.7857142857142857
+Pytorch no transform test size 20%:	 Accuracy: 78.57%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch no transform test size 20%:	 Accuracy: 92.86%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 85.71%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.8571428571428571
+Pytorch no transform test size 20%:	 Accuracy: 85.71%
+MLP test size 20%:	 Accuracy: 85.71%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch no transform test size 20%:	 Accuracy: 92.86%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch no transform test size 20%:	 Accuracy: 92.86%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 85.71%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+NJET 0.8571428571428571
+Pytorch test size 20%:	 Accuracy: 85.71%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.7857142857142857
+Pytorch no transform test size 20%:	 Accuracy: 78.57%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 85.71%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 78.57%
+Logistic test size 20%:	 Accuracy: 85.71%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 85.71%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.8571428571428571
+Pytorch no transform test size 20%:	 Accuracy: 85.71%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch no transform test size 20%:	 Accuracy: 92.86%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch no transform test size 20%:	 Accuracy: 92.86%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch no transform test size 20%:	 Accuracy: 92.86%
+MLP test size 20%:	 Accuracy: 85.71%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 78.57%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 85.71%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.8571428571428571
+Pytorch no transform test size 20%:	 Accuracy: 85.71%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+NJET 0.9285714285714286
+Pytorch test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.7857142857142857
+Pytorch no transform test size 20%:	 Accuracy: 78.57%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+NJET 0.8571428571428571
+Pytorch test size 20%:	 Accuracy: 85.71%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 85.71%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+NJET 0.9285714285714286
+Pytorch test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.8571428571428571
+Pytorch no transform test size 20%:	 Accuracy: 85.71%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 85.71%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+NJET 0.8571428571428571
+Pytorch test size 20%:	 Accuracy: 85.71%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+NJET 0.9285714285714286
+Pytorch test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+NJET 0.9285714285714286
+Pytorch test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 85.71%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch no transform test size 20%:	 Accuracy: 92.86%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+NJET 0.9285714285714286
+Pytorch test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch no transform test size 20%:	 Accuracy: 92.86%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch no transform test size 20%:	 Accuracy: 92.86%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 85.71%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.8571428571428571
+Pytorch no transform test size 20%:	 Accuracy: 85.71%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 85.71%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+NJET 0.9285714285714286
+Pytorch test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 85.71%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 85.71%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.8571428571428571
+Pytorch no transform test size 20%:	 Accuracy: 85.71%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 78.57%
+Logistic test size 20%:	 Accuracy: 85.71%
+NJET 0.8571428571428571
+Pytorch test size 20%:	 Accuracy: 85.71%
+NJET 0.8571428571428571
+Pytorch no transform test size 20%:	 Accuracy: 85.71%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 85.71%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 85.71%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+NJET 0.8571428571428571
+Pytorch test size 20%:	 Accuracy: 85.71%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.8571428571428571
+Pytorch no transform test size 20%:	 Accuracy: 85.71%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 85.71%
+NJET 0.8571428571428571
+Pytorch test size 20%:	 Accuracy: 85.71%
+NJET 0.9285714285714286
+Pytorch no transform test size 20%:	 Accuracy: 92.86%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch no transform test size 20%:	 Accuracy: 92.86%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 85.71%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 78.57%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 78.57%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 85.71%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch no transform test size 20%:	 Accuracy: 92.86%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+NJET 0.7857142857142857
+Pytorch test size 20%:	 Accuracy: 78.57%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+NJET 0.9285714285714286
+Pytorch test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 78.57%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 85.71%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 85.71%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.7142857142857143
+Pytorch no transform test size 20%:	 Accuracy: 71.43%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+NJET 0.7142857142857143
+Pytorch test size 20%:	 Accuracy: 71.43%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 85.71%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.8571428571428571
+Pytorch no transform test size 20%:	 Accuracy: 85.71%
+MLP test size 20%:	 Accuracy: 85.71%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+NJET 0.7857142857142857
+Pytorch test size 20%:	 Accuracy: 78.57%
+NJET 0.9285714285714286
+Pytorch no transform test size 20%:	 Accuracy: 92.86%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 78.57%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 78.57%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch no transform test size 20%:	 Accuracy: 92.86%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 85.71%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch no transform test size 20%:	 Accuracy: 92.86%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.8571428571428571
+Pytorch no transform test size 20%:	 Accuracy: 85.71%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 85.71%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch no transform test size 20%:	 Accuracy: 92.86%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch no transform test size 20%:	 Accuracy: 92.86%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.7857142857142857
+Pytorch no transform test size 20%:	 Accuracy: 78.57%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 85.71%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.8571428571428571
+Pytorch no transform test size 20%:	 Accuracy: 85.71%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch test size 20%:	 Accuracy: 92.86%
+NJET 0.9285714285714286
+Pytorch no transform test size 20%:	 Accuracy: 92.86%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch no transform test size 20%:	 Accuracy: 92.86%
+MLP test size 20%:	 Accuracy: 85.71%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 85.71%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch no transform test size 20%:	 Accuracy: 92.86%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch no transform test size 20%:	 Accuracy: 92.86%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch no transform test size 20%:	 Accuracy: 92.86%
+MLP test size 20%:	 Accuracy: 85.71%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 85.71%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.8571428571428571
+Pytorch no transform test size 20%:	 Accuracy: 85.71%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 85.71%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 85.71%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 85.71%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 85.71%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 85.71%
+Logistic test size 20%:	 Accuracy: 85.71%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 85.71%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.8571428571428571
+Pytorch no transform test size 20%:	 Accuracy: 85.71%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.7142857142857143
+Pytorch no transform test size 20%:	 Accuracy: 71.43%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 85.71%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.8571428571428571
+Pytorch no transform test size 20%:	 Accuracy: 85.71%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.7142857142857143
+Pytorch no transform test size 20%:	 Accuracy: 71.43%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch no transform test size 20%:	 Accuracy: 92.86%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.8571428571428571
+Pytorch no transform test size 20%:	 Accuracy: 85.71%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 78.57%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.8571428571428571
+Pytorch no transform test size 20%:	 Accuracy: 85.71%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch no transform test size 20%:	 Accuracy: 92.86%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+NJET 0.8571428571428571
+Pytorch test size 20%:	 Accuracy: 85.71%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 85.71%
+Logistic test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 85.71%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.8571428571428571
+Pytorch no transform test size 20%:	 Accuracy: 85.71%
+MLP test size 20%:	 Accuracy: 78.57%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.8571428571428571
+Pytorch no transform test size 20%:	 Accuracy: 85.71%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+NJET 0.8571428571428571
+Pytorch test size 20%:	 Accuracy: 85.71%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+NJET 0.7142857142857143
+Pytorch test size 20%:	 Accuracy: 71.43%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.8571428571428571
+Pytorch no transform test size 20%:	 Accuracy: 85.71%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch no transform test size 20%:	 Accuracy: 92.86%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 85.71%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch no transform test size 20%:	 Accuracy: 92.86%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.7857142857142857
+Pytorch no transform test size 20%:	 Accuracy: 78.57%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch no transform test size 20%:	 Accuracy: 92.86%
+MLP test size 20%:	 Accuracy: 85.71%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 85.71%
+Logistic test size 20%:	 Accuracy: 92.86%
+NJET 0.8571428571428571
+Pytorch test size 20%:	 Accuracy: 85.71%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch no transform test size 20%:	 Accuracy: 92.86%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+NJET 0.8571428571428571
+Pytorch test size 20%:	 Accuracy: 85.71%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+NJET 0.9285714285714286
+Pytorch test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.7857142857142857
+Pytorch no transform test size 20%:	 Accuracy: 78.57%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch no transform test size 20%:	 Accuracy: 92.86%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 100.00%
+Logistic test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+NJET 0.9285714285714286
+Pytorch no transform test size 20%:	 Accuracy: 92.86%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 85.71%
+Logistic test size 20%:	 Accuracy: 92.86%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
+BROKE
+Pytorch no transform test size 20%:	 Accuracy: 100.00%
+MLP test size 20%:	 Accuracy: 92.86%
+Logistic test size 20%:	 Accuracy: 85.71%
+BROKE
+Pytorch test size 20%:	 Accuracy: 100.00%
