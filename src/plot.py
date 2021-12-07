@@ -1,6 +1,7 @@
 #  import numpy as np
-import seaborn as sns
+import os
 import matplotlib
+import seaborn as sns
 
 #  from matplotlib import cm
 import matplotlib.pyplot as plt
@@ -10,6 +11,105 @@ import matplotlib.pyplot as plt
 sns.set()
 
 import tikzplotlib
+
+
+def tweak_tikz_plots(filename):
+    """Tweaks the tikz plots to make them look better
+
+    Parameters
+    ----------
+        filename : str
+            The filename of the tikz plot to be tweaked
+    """
+    with open(filename, "r") as f:
+        lines = f.readlines()
+
+    with open(filename, "w") as f:
+        for line in lines:
+            if "majorticks" in line:
+                f.write(line.replace("false", "true"))
+            elif "addplot" in line:
+                f.write(line.replace("semithick", "thick"))
+            elif "\\begin{axis}[" in line:
+                f.write(line)
+                f.write("width=12cm,")
+                f.write("height=8cm,")
+            else:
+                f.write(line)
+
+
+def save_tikz(filename, preview=False):
+    """Saves the plot as a tikz-tex file
+
+    Parameters
+    ----------
+        filename : str
+            The filename of the tikz plot to be saved
+    """
+    plt.grid(True)
+    tikzplotlib.clean_figure()
+    tikzplotlib.save(filename)
+    tweak_tikz_plots(filename)
+    if preview:
+        plt.show()
+    #  tweak_tikz_plots(filename)
+    plt.clf()
+
+
+def line_plot(
+    title,
+    x_datas,
+    y_datas,
+    data_labels,
+    x_label,
+    y_label,
+    x_log=False,
+    y_log=False,
+    filename="",
+    show=True,
+):
+    """Plots a line plot
+
+    Parameters
+    ----------
+        title : str
+            The title of the plots
+        x_datas : float[]
+            The x data for the plot
+        y_datas : float[]
+            The y data for the plot
+        data_labels : str[]
+            The labels for the plot
+        x_label : str
+            The label for the x-axis
+        y_label : str
+            The label for the y-axis
+        filename : str/None
+            The filename for which to save the plot, does not save if None
+    """
+    plt.title(title)
+    for x_data, y_data, label in zip(x_datas, y_datas, data_labels):
+        sns.lineplot(x=x_data, y=y_data, label=label)
+    plt.xlabel(x_label)
+    plt.ylabel(y_label)
+    if x_log:
+        plt.xscale("log")
+    if y_log:
+        plt.yscale("log")
+    if filename:
+        root, ext = os.path.splitext(filename)
+        if ext == "":
+            filename += ".tex"
+        elif ext != ".tex":
+            filename = root + ".tex"
+        save_tikz(filename, show)
+    elif show:
+        plt.show()
+
+        #  plt.savefig(f"output/{filename.replace(' ', '_')}")
+    #  if show:
+    #      plt.show()
+
 
 #  def signif(x, p):
 #      """Returns p significant digits of x
@@ -147,49 +247,3 @@ import tikzplotlib
 #          plt.savefig(f"output/{filename.replace(' ', '_')}")
 #      if show:
 #          plt.show()
-
-
-def line_plot(
-    title,
-    x_datas,
-    y_datas,
-    data_labels,
-    x_label,
-    y_label,
-    x_log=False,
-    y_log=False,
-    filename="",
-    show=True,
-):
-    """Plots a line plot
-
-    Parameters
-    ----------
-        title : str
-            The title of the plots
-        x_datas : float[]
-            The x data for the plot
-        y_datas : float[]
-            The y data for the plot
-        data_labels : str[]
-            The labels for the plot
-        x_label : str
-            The label for the x-axis
-        y_label : str
-            The label for the y-axis
-        filename : str/None
-            The filename for which to save the plot, does not save if None
-    """
-    plt.title(title)
-    for x_data, y_data, label in zip(x_datas, y_datas, data_labels):
-        sns.lineplot(x=x_data, y=y_data, label=label)
-    plt.xlabel(x_label)
-    plt.ylabel(y_label)
-    if x_log:
-        plt.xscale("log")
-    if y_log:
-        plt.yscale("log")
-    if filename:
-        plt.savefig(f"output/{filename.replace(' ', '_')}")
-    if show:
-        plt.show()

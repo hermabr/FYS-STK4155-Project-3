@@ -1,0 +1,56 @@
+% This file was created with tikzplotlib v0.9.16.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{0.917647058823529,0.917647058823529,0.949019607843137}
+\definecolor{color1}{rgb}{0.298039215686275,0.447058823529412,0.690196078431373}
+\definecolor{color2}{rgb}{0.866666666666667,0.517647058823529,0.32156862745098}
+
+\begin{axis}[
+width=12cm,height=8cm,axis background/.style={fill=color0},
+axis line style={white},
+legend cell align={left},
+legend style={
+  fill opacity=0.8,
+  draw opacity=1,
+  text opacity=1,
+  at={(0.03,0.97)},
+  anchor=north west,
+  draw=white!80!black,
+  fill=color0
+},
+tick align=outside,
+title={Bias Variance-tradeoff MLP hidden layers MSE},
+x grid style={white},
+xlabel=\textcolor{white!15!black}{number of layers},
+xmajorgrids,
+xmajorticks=true,
+xmin=0.8, xmax=5.2,
+xtick style={color=white!15!black},
+y grid style={white},
+ylabel=\textcolor{white!15!black}{Error},
+ymajorgrids,
+ymajorticks=true,
+ymin=0.0224393587079012, ymax=0.0256210312168339,
+ytick style={color=white!15!black}
+]
+\addplot [thick, color1]
+table {%
+1 0.0242133140563965
+2 0.0244413614273071
+3 0.0248924493789673
+4 0.0225839614868164
+5 0.0246403217315674
+};
+\addlegendentry{mse train}
+\addplot [thick, color2]
+table {%
+1 0.0250116586685181
+2 0.0250165462493896
+3 0.0254764556884766
+4 0.0233981609344482
+5 0.0254054069519043
+};
+\addlegendentry{mse test}
+\end{axis}
+
+\end{tikzpicture}

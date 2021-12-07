@@ -21,6 +21,7 @@ def bootstrap_bias_variance(model, data, bootstrap_N):
 
     #  bootstrap_z_tilde = np.zeros((bootstrap_N, N))
     bootstrap_z_tilde = np.empty((bootstrap_N, len(data.y_test)))
+    bootstrap_z_tilde_train = np.empty((bootstrap_N, len(data.y_train)))
 
     for i in tqdm(range(bootstrap_N), leave=False):
         indices = np.random.randint(0, N, N)
@@ -30,10 +31,12 @@ def bootstrap_bias_variance(model, data, bootstrap_N):
 
         model.fit(X_train, y_train)
         bootstrap_z_tilde[i] = model.predict(data.X_test)
+        bootstrap_z_tilde_train[i] = model.predict(data.X_train)
 
     return (
         bias(data.y_test, bootstrap_z_tilde),
         variance(bootstrap_z_tilde),
+        mse(data.y_train, bootstrap_z_tilde_train),
         mse(data.y_test, bootstrap_z_tilde),
     )
 

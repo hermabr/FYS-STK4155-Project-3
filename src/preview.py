@@ -10,50 +10,65 @@ from plot import line_plot
 
 filename, x_name = "test_size_performance.csv", "test_size"
 
-filenames = [
-    "bias_variance_ols.csv",
-    "bias_variance_mlp_layer_size.csv",
-    "bias_variance_mlp_number_of_layers.csv",
-    "bias_variance_ensamble.csv",
-]
-x_names = ["degree", "layer size", "number of layers", "depth"]
+df = pd.read_csv(f"output/data/{filename}")
+x = df[x_name]
+y = df.loc[:, df.columns != x_name]
+for column in y.columns:
+    print(sum(df[column]) / len(df))
 
-
-#  def line_plot(
-#      title,
-#      x_datas,
-#      y_datas,
-#      data_labels,
-#      x_label,
-#      y_label,
-#      x_log=False,
-#      y_log=False,
-#      filename="",
-#      show=True,
-#  ):
-#      pass
-
-
-for filename, x_name in zip(filenames, x_names):
-    #  df = pd.read_csv(filename)
-    df = pd.read_csv(f"output/data/{filename}")
-    y_values = df.loc[:, df.columns != x_name].values.transpose()
-    x_values = [df[x_name].values for _ in range(len(y_values))]
-
-    line_plot(
-        f"{filename}",
-        x_values,
-        y_values,
-        [f"{x_name} {i}" for i in range(len(y_values))],
-        x_name,
-        "bias variance",
-        #  filename=f"output/plots/{filename}",
-        show=True,
-    )
-    #  print(y_values)
-    #  print([df[x_name].values for _ in range(len(y_values))])
-    #  #  print()
-    #  #  #  y = df.loc[:, df.columns != x_name].values
-    #  exit()
-    #  df.plot(x_name)
-    #  plt.show()
+#  file_informations = [
+#      {
+#          "filename": "bias_variance_ols.csv",
+#          "x_name": "degree",
+#          "pretty_name": "Bias Variance-tradeoff OLS",
+#      },
+#      {
+#          "filename": "bias_variance_mlp_layer_size.csv",
+#          "x_name": "layer size",
+#          "pretty_name": "Bias Variance-tradeoff MLP layer size",
+#      },
+#      {
+#          "filename": "bias_variance_mlp_number_of_layers.csv",
+#          "x_name": "number of layers",
+#          "pretty_name": "Bias Variance-tradeoff MLP hidden layers",
+#      },
+#      {
+#          "filename": "bias_variance_ensamble.csv",
+#          "x_name": "depth",
+#          "pretty_name": "Bias Variance-tradeoff Ensamble",
+#      },
+#  ]
+#
+#  for file_information in file_informations:
+#      df = pd.read_csv(f"output/data/{file_information['filename']}")
+#
+#      x_values = [df[file_information["x_name"]].values for _ in range(2)]
+#
+#      biases = df["bias"].values
+#      variances = df["variance"].values
+#
+#      line_plot(
+#          f"{file_information['pretty_name']} Bias/Variance",
+#          x_values,
+#          [biases, variances],
+#          ["bias", "variance"],
+#          file_information["x_name"],
+#          "Error",
+#          filename=f"output/plots/{file_information['filename'][:-4]}_bias_variance",
+#          show=True,
+#      )
+#
+#      # Plot train and test mse
+#      train_mse = df["mse_train"].values
+#      test_mse = df["mse_test"].values
+#
+#      line_plot(
+#          f"{file_information['pretty_name']} MSE",
+#          x_values,
+#          [train_mse, test_mse],
+#          ["mse train", "mse test"],
+#          file_information["x_name"],
+#          "Error",
+#          filename=f"output/plots/{file_information['filename'][:-4]}_mse",
+#          show=True,
+#      )
