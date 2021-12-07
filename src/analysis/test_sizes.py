@@ -2,7 +2,8 @@ import numpy as np
 from tqdm import tqdm
 from data import FallData
 from analysis import pytorch
-from cnn.tensorflow import get_model
+
+#  from cnn.tensorflow import get_model
 from sklearn.neural_network import MLPClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import confusion_matrix

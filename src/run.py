@@ -3,7 +3,7 @@ import torch
 import argparse
 import numpy as np
 
-from analysis import logistic, pytorch, ffnn, bias_variance, tensorflow, test_sizes
+from analysis import logistic, pytorch, ffnn, bias_variance, test_sizes
 
 #  from cnn import keras
 
