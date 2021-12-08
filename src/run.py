@@ -79,13 +79,10 @@ if __name__ == "__main__":
         if args.all:
             print("Analysis for pytorch cnn")
         pytorch.main()
-        #  if args.all:
-        #      print("Analysis for tensorflow cnn")
-        #  tensorflow.main()
-    if args.ffnn or args.all:
-        if args.all:
-            print("Analysis for ffnn")
-        ffnn.main()
+    #  if args.ffnn or args.all:
+    #      if args.all:
+    #          print("Analysis for ffnn")
+    #      ffnn.main()
     if args.biasvariance or args.all:
         if args.all:
             print("Analysis for bias-variance tradeoff")

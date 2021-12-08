@@ -14,27 +14,9 @@ def accuracy_metrics(y_true, y_pred):
 
 
 def get_all_metrics(y_true, y_pred):
-    #  tn_fp, fn_tp = confusion_matrix(true_output, prediction_log_reg)
-    #  tn, fp = tn_fp
-    #  fn, tp = fn_tp
-    #
-    #  tn, fp = tn_fp
-    #  fn, tp = fn_tp
-    #
-    #  ppv = tp / (tp + fp) * 100
-    #  npv = tn / (tn + fn) * 100
-    #
-    #  F1_score = tp / (tp + 0.5 * (fp + fn))
-    #
-    #  print(f"PPV: {ppv:.2f}%, NPV: {npv:.2f}%, F1: {F1_score:.2f}, Accuracy: {accuracy_metrics(true_output, prediction_log_reg):.2f}")
-
     TN_FP, FN_TP = confusion_matrix(y_true, y_pred)
     TN, FP = TN_FP
     FN, TP = FN_TP
-    #  FP = CM.sum(axis=0) - np.diag(CM)
-    #  FN = CM.sum(axis=1) - np.diag(CM)
-    #  TP = np.diag(CM)
-    #  TN = CM.sum() - (FP + FN + TP)
 
     # Sensitivity, hit rate, recall, or true positive rate
     TPR = TP / (TP + FN)
@@ -74,9 +56,8 @@ def main():
         accuracy_text = f"{i},"
         outputs = f"{i:3}, "
 
-        #  for i in range(1):
         test_size = 0.2
-        #  for test_size in tqdm(np.arange(0.1, 1, 0.1)):
+
         data = FallData(test_size=test_size)
         data_pytorch_transform = FallData(
             test_size=test_size, batch_size=4, for_pytorch=True, transform=True
@@ -85,45 +66,28 @@ def main():
             test_size=test_size, batch_size=4, for_pytorch=True, transform=False
         )
 
-        #  data_tensorflow = FallData(test_size=test_size, for_tensorflow=True)
-
-        #  # Logistic regression
+        # Logistic regression
         logreg = LogisticRegression()
         logreg.fit(data.X_train, data.y_train)
         z_tilde = logreg.predict(data.X_test)
         accuracy_text += f"{get_all_metrics(data.y_test, z_tilde)},"
-        #  accuracy_logistic = accuracy_metric(data.y_test, z_tilde)
         outputs += write_out("Log", get_all_metrics(data.y_test, z_tilde).split(",")[0])
 
-        #  # Pytorch cnn with transform
+        # Pytorch cnn with transform
         accuracy_pytorch_transform, losses, y_test, y_tilde = pytorch.train_model(
             data_pytorch_transform
         )
         accuracy_text += f"{get_all_metrics(y_test, y_tilde)},"
         outputs += write_out("CNN w", accuracy_pytorch_transform)
 
-        #  # Pytorch cnn without transform
+        # Pytorch cnn without transform
         accuracy_pytorch_no_transform, losses, y_test, y_tilde = pytorch.train_model(
             data_pytorch_no_transform
         )
         accuracy_text += f"{get_all_metrics(y_test, y_tilde)},"
         outputs += write_out("CNN n", accuracy_pytorch_no_transform)
 
-        # Tensorflow cnn
-        #  model = get_model()
-        #  model.fit(
-        #      data_tensorflow.train_dataset,
-        #      epochs=30,
-        #      validation_data=data_tensorflow.test_dataset,
-        #      verbose=False,
-        #  )
-        #  _, accuracy_tensorflow = model.evaluate(
-        #      data_tensorflow.test_dataset, verbose=False
-        #  )
-        #  write_out("Tensorflow", accuracy_tensorflow)
-
         # Feed forward neural network
-        accuracy_ffnn = 0.2
         net = MLPClassifier(
             solver="lbfgs",
             alpha=1e-3,
@@ -133,28 +97,11 @@ def main():
         net.fit(data.X_train, data.y_train)
         z_tilde = net.predict(data.X_test)
         accuracy_text += f"{get_all_metrics(data.y_test, z_tilde)}"
-        #  accuracy_ffnn = accuracy_metric(data.y_test, z_tilde)
         outputs += write_out(
             "FFNN", get_all_metrics(data.y_test, z_tilde).split(",")[0]
         )
         tqdm.write(outputs)
 
-        #  if (
-        #      accuracy_logistic == accuracy_pytorch
-        #      and accuracy_logistic == accuracy_ffnn
-        #      and accuracy_logistic == 1
-        #  ):
-        #      print("HA MA GAD")
-        #      exit()
-
-        #  accuracy_texts.append(
-        #      f"{i},{accuracy_logistic*100},{accuracy_pytorch_transform*100},{accuracy_pytorch_no_transform*100},{accuracy_ffnn*100}\n"
-        #      #  f"{i}){test_size:.1f},{accuracy_logistic*100},{accuracy_pytorch*100},{accuracy_ffnn*100}\n"
-        #  )
-
-        #  f.write(
-        #      f"{test_size*100:.0f},{accuracy_logistic*100:.2f},{accuracy_pytorch*100:.2f},{accuracy_tensorflow*100:.2f},{accuracy_ffnn*100:.2f}\n"
-        #  )
         accuracy_texts.append(accuracy_text)
 
     with open("output/data/test_size_performance.csv", "w") as f:
