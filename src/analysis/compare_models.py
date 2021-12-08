@@ -1,3 +1,4 @@
+import config
 import numpy as np
 from tqdm import tqdm
 from data import FallData
@@ -43,8 +44,6 @@ def get_all_metrics(y_true, y_pred):
 
 
 def write_out(name, accuracy):
-    #  tqdm.write(f"{name}:\t Accuracy: {float(accuracy)*100:.2f}%")
-    #  tqdm.write(f"{float(accuracy)*100:.2f}% ", end=" ")
     return f"{float(accuracy)*100:6.2f}% "
 
 
@@ -56,14 +55,18 @@ def main():
         accuracy_text = f"{i},"
         outputs = f"{i:3}, "
 
-        test_size = 0.2
-
-        data = FallData(test_size=test_size)
+        data = FallData(test_size=config.TEST_SIZE)
         data_pytorch_transform = FallData(
-            test_size=test_size, batch_size=4, for_pytorch=True, transform=True
+            test_size=config.TEST_SIZE,
+            batch_size=config.BATCH_SIZE,
+            for_pytorch=True,
+            transform=True,
         )
         data_pytorch_no_transform = FallData(
-            test_size=test_size, batch_size=4, for_pytorch=True, transform=False
+            test_size=config.TEST_SIZE,
+            batch_size=config.BATCH_SIZE,
+            for_pytorch=True,
+            transform=False,
         )
 
         # Logistic regression

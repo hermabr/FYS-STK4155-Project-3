@@ -1,12 +1,11 @@
+import config
 import numpy as np
 from torch import nn
 from tqdm import tqdm
 from data import FallData
-from cnn.model import CNN, train, test
-import torch.optim as optim
-import matplotlib.pyplot as plt
 from plot import line_plot
-import config
+import torch.optim as optim
+from cnn.model import CNN, train, test
 
 
 def train_model(data, num_epoch=config.NUM_EPOCHS):
@@ -26,7 +25,7 @@ def train_model(data, num_epoch=config.NUM_EPOCHS):
             )
             losses.append(loss)
 
-            if accuracy == 0.99:
+            if accuracy == 1:
                 break
 
     return accuracy, losses, all_targets, all_predictions
@@ -57,7 +56,7 @@ def main():
 
     for epoch in tqdm(EPOCHS, leave=False, desc="Training"):
         train(model, data.train_loader, optimizer, loss_fn)
-        loss, accuracy, all_targets, all_predictions = test(
+        loss, accuracy, _, _ = test(
             model, data.test_loader, epoch, loss_fn, verbose=False
         )
         losses[epoch - 1] = loss

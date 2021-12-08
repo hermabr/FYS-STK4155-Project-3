@@ -1,11 +1,8 @@
-import os
 import torch
 import argparse
 import numpy as np
 
-from analysis import logistic, pytorch, ffnn, bias_variance, test_sizes
-
-#  from cnn import keras
+from analysis import pytorch, bias_variance, compare_models
 
 SEED = 42
 
@@ -17,16 +14,10 @@ if __name__ == "__main__":
         description="To run the bias-variance tradeoff experiment"
     )
     parser.add_argument(
-        "-t",
-        "--test_size",
+        "-m",
+        "--models",
         action="store_true",
-        help="To run test size analysis for the different models",
-    )
-    parser.add_argument(
-        "-l",
-        "--logistic",
-        action="store_true",
-        help="To run the logistic regression analysis",
+        help="To run test of different models to evaluate their performance",
     )
     parser.add_argument(
         "-c",
@@ -34,20 +25,8 @@ if __name__ == "__main__":
         action="store_true",
         help="To run the pytorch and tensorflow cnn analyses",
     )
-    #  parser.add_argument(
-    #      "-t",
-    #      "--tensorflow",
-    #      action="store_true",
-    #      help="To run the tensorflow cnn analysis",
-    #  )
     parser.add_argument(
-        "-f",
-        "--ffnn",
-        action="store_true",
-        help="To run the ffnn analysis",
-    )
-    parser.add_argument(
-        "-bv",
+        "-b",
         "--biasvariance",
         help="To test the bias-variance tradeoff for three different methods",
         action="store_true",
@@ -59,30 +38,19 @@ if __name__ == "__main__":
         action="store_true",
     )
 
-    #  for seed in range(1, 100):
-    #      np.random.seed(seed)
-    #      torch.manual_seed(seed)
-    #      print(f"Seed: {seed}")
-
     args = parser.parse_args()
     if not any(vars(args).values()):
         parser.print_help()
         exit(0)
 
-    if args.test_size or args.all:
-        test_sizes.main()
-    if args.logistic or args.all:
+    if args.models or args.all:
         if args.all:
-            print("Analysis for logistic regression")
-        logistic.main()
+            print("Analysis for performance of different models")
+        compare_models.main()
     if args.cnn or args.all:
         if args.all:
             print("Analysis for pytorch cnn")
         pytorch.main()
-    #  if args.ffnn or args.all:
-    #      if args.all:
-    #          print("Analysis for ffnn")
-    #      ffnn.main()
     if args.biasvariance or args.all:
         if args.all:
             print("Analysis for bias-variance tradeoff")
