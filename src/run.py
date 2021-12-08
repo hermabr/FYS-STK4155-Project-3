@@ -10,8 +10,6 @@ from analysis import logistic, pytorch, ffnn, bias_variance, test_sizes
 SEED = 42
 
 if __name__ == "__main__":
-    os.system("clear")  # TODO: REMOVE THIS LINE!
-
     np.random.seed(SEED)
     torch.manual_seed(SEED)
 

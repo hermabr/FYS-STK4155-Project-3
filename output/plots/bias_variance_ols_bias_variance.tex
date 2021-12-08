@@ -13,8 +13,8 @@ legend style={
   fill opacity=0.8,
   draw opacity=1,
   text opacity=1,
-  at={(0.03,0.03)},
-  anchor=south west,
+  at={(0.03,0.97)},
+  anchor=north west,
   draw=white!80!black,
   fill=color0
 },
@@ -24,13 +24,13 @@ x grid style={white},
 xlabel=\textcolor{white!15!black}{degree},
 xmajorgrids,
 xmajorticks=true,
-xmin=0.55, xmax=10.45,
+xmin=0.3, xmax=15.7,
 xtick style={color=white!15!black},
 y grid style={white},
 ylabel=\textcolor{white!15!black}{Error},
 ymajorgrids,
 ymajorticks=true,
-ymin=0.00616005985192227, ymax=0.0204236977683695,
+ymin=0.00595999083664595, ymax=0.0246251470891724,
 ytick style={color=white!15!black}
 ]
 \addplot [thick, color1]
@@ -45,6 +45,11 @@ table {%
 8 0.00880730152130127
 9 0.00822353363037109
 10 0.00919437408447266
+11 0.00876867771148682
+12 0.00906956195831299
+13 0.00964975357055664
+14 0.0106511116027832
+15 0.00938057899475098
 };
 \addlegendentry{bias}
 \addplot [thick, color2]
@@ -59,6 +64,11 @@ table {%
 8 0.0189996957778931
 9 0.0170928239822388
 10 0.0180041790008545
+11 0.0171593427658081
+12 0.0196502208709717
+13 0.0186266899108887
+14 0.0237767696380615
+15 0.0210236310958862
 };
 \addlegendentry{variance}
 \end{axis}
