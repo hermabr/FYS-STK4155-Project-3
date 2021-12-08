@@ -21,12 +21,6 @@ for feature in ["accuracy", "TPR", "TNR", "PPV", "NPV", "FPR", "FNR", "FDR", "F1
             print(column, df[column].mean())
     print()
 
-#  for column in y.columns:
-#      print(column)
-#      #  print(min(df[column]))
-#      print(sum(df[column]) / len(df))
-#      print()
-
 file_informations = [
     {
         "filename": "bias_variance_ols.csv",

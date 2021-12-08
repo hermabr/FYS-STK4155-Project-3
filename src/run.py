@@ -3,6 +3,7 @@ import argparse
 import numpy as np
 
 from analysis import pytorch, bias_variance, compare_models
+import plot
 
 SEED = 42
 
@@ -32,6 +33,12 @@ if __name__ == "__main__":
         action="store_true",
     )
     parser.add_argument(
+        "-p",
+        "--plot",
+        help="To make the plots and output useful results",
+        action="store_true",
+    )
+    parser.add_argument(
         "-a",
         "--all",
         help="To run all the analyzes",
@@ -55,3 +62,7 @@ if __name__ == "__main__":
         if args.all:
             print("Analysis for bias-variance tradeoff")
         bias_variance.main()
+    if args.plot or args.all:
+        if args.all:
+            print("Plotting results")
+        plot.main()

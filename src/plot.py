@@ -1,6 +1,7 @@
 #  import numpy as np
 import os
 import matplotlib
+import pandas as pd
 import seaborn as sns
 
 #  from matplotlib import cm
@@ -106,144 +107,109 @@ def line_plot(
     elif show:
         plt.show()
 
-        #  plt.savefig(f"output/{filename.replace(' ', '_')}")
-    #  if show:
-    #      plt.show()
+
+def output_model_performance():
+    filename, x_name = "test_size_performance.csv", "test_size"
+
+    df = pd.read_csv(f"output/data/{filename}")
+    x = df[x_name]
+    y = df.loc[:, df.columns != x_name]
+
+    #  for feature in ["accuracy", "TPR", "TNR", "PPV", "NPV", "FPR", "FNR", "FDR", "F1"]:
+    #      for column in y.columns:
+    #          if feature in column:
+    #              print(column, df[column].mean())
+    #      print()
+
+    features = ["accuracy", "TPR", "TNR", "PPV", "NPV", "FPR", "FNR", "FDR", "F1"]
+    nice_features = ["Acc", "TPR", "TNR", "PPV", "NPV", "FPR", "FNR", "FDR", "F1"]
+    model_names = ["logistic", "cnn with transform", "cnn without transform", "ffnn"]
+    nice_model_names = [
+        "Logistic",
+        "CNN with augmentation",
+        "CNN without augmentation",
+        "FFNN",
+    ]
+
+    nice_table = f"""\\begin{{tabular}}{{ |p{{3cm}}||{'c|'*(len(features))}  }}
+\\hline
+\\multicolumn{{{len(features) + 1}}}{{|c|}}{{Performance of models}} \\\\
+\\hline
+ & {" & ".join(nice_features)} \\\\
+\\hline\n"""
+
+    for nice_model_name, model_name in zip(nice_model_names, model_names):
+        nice_table += f"{nice_model_name} & "
+        for feature in features:
+            nice_table += f"{y[model_name + '_' +feature].mean()*100:6.2f}\\% & "
+        nice_table = nice_table[:-2]
+        nice_table += "\\\\\n\\hline \n"
+    nice_table += "\\end{tabular}"
+    #      nice_table += """\\hline
+    #  \\end{tabular}"""
+
+    print(nice_table)
 
 
-#  def signif(x, p):
-#      """Returns p significant digits of x
-#
-#      Parameters
-#      ----------
-#          x : np.array
-#              The values to round
-#          p : int
-#              The number of significant digits
-#
-#      Returns
-#      -------
-#          float
-#              The rounded number
-#      """
-#      x = np.asarray(x)
-#      x_positive = np.where(np.isfinite(x) & (x != 0), np.abs(x), 10 ** (p - 1))
-#      mags = 10 ** (p - 1 - np.floor(np.log10(x_positive)))
-#      return np.round(x * mags) / mags
-#
-#
-#  def surface_plot(
-#      title, x, y, z, subtitles="", xlabel="x", ylabel="y", zlabel="z", filename=""
-#  ):
-#      """Plot values in a surface plot
-#
-#      Parameters
-#      ----------
-#          title : str
-#              The title of the plots
-#          x : np.array
-#              The x values for which to plot
-#          y : np.array
-#              The y values for which to plot
-#          z_array : np.array
-#              The z values for which to plot
-#          subtitles : str
-#              Subtitles for the plot
-#          filename : str/None
-#              The filename for which to save the plot, does not save if None
-#      """
-#      fig = plt.figure()
-#
-#      z_np_arr = np.array(z)
-#      vmin = np.min(z_np_arr)
-#      vmax = np.max(z_np_arr)
-#
-#      if type(z) != list:
-#          z = [[z]]
-#
-#      nrows, ncols = len(z[0]), len(z)
-#
-#      axes = []
-#      for row in range(nrows):
-#          for col in range(ncols):
-#              ax = fig.add_subplot(ncols, nrows, ncols * col + row + 1, projection="3d")
-#              axes.append(ax)
-#              surf = ax.plot_surface(
-#                  x,
-#                  y,
-#                  z[col][row],
-#                  cmap=cm.coolwarm,
-#                  linewidth=0,
-#                  antialiased=False,
-#                  vmin=vmin,
-#                  vmax=vmax,
-#              )
-#
-#              ax.set_xlabel(xlabel)
-#              ax.set_ylabel(ylabel)
-#              ax.set_zlabel(zlabel)
-#
-#              if subtitles:
-#                  ax.set_title(subtitles[col][row])
-#
-#      cax, kw = matplotlib.colorbar.make_axes([ax for ax in axes])
-#      plt.colorbar(surf, cax=cax, **kw)
-#
-#      fig.suptitle(title)
-#
-#      if filename:
-#          plt.savefig(f"output/{filename.replace(' ', '_')}")
-#      plt.show()
-#
-#
-#  def heat_plot(
-#      title,
-#      table_values,
-#      xticklabels,
-#      yticklabels,
-#      x_label,
-#      y_label,
-#      selected_idx=None,
-#      show=True,
-#      filename="",
-#  ):
-#      """Plots the heat plot
-#
-#      Parameters
-#      ----------
-#          title : str
-#              The title of the plots
-#          table_values : float[][]
-#              The values of the values for which to plot in the heat plot
-#          xticklabels : str
-#              The labels for the ticks for the x-axis
-#          yticklabels : str
-#              The labels for the ticks for the y-axis
-#          x_label : str
-#              The label for the x-axis
-#          y_label : str
-#              The label for the y-axis
-#          selected_idx : tuple[int, int]
-#              The index for which to give an extra mark
-#          show : bool
-#              Whether to show the plot
-#          filename : str/None
-#              The filename for which to save the plot, does not save if None
-#      """
-#      g = sns.heatmap(
-#          table_values,
-#          xticklabels=signif(xticklabels, 2),
-#          yticklabels=signif(yticklabels, 2),
-#          annot=True,
-#      )
-#      from matplotlib.patches import Rectangle
-#
-#      if selected_idx:
-#          g.add_patch(Rectangle(selected_idx, 1, 1, fill=False, edgecolor="blue", lw=3))
-#      plt.title(title)
-#      plt.xlabel(x_label)
-#      plt.ylabel(y_label)
-#      if filename:
-#          plt.savefig(f"output/{filename.replace(' ', '_')}")
-#      if show:
-#          plt.show()
+def make_bias_variance_plots(show):
+    file_informations = [
+        {
+            "filename": "bias_variance_ols.csv",
+            "x_name": "degree",
+            "pretty_name": "Bias Variance-tradeoff OLS",
+        },
+        {
+            "filename": "bias_variance_mlp_layer_size.csv",
+            "x_name": "layer size",
+            "pretty_name": "Bias Variance-tradeoff MLP layer size",
+        },
+        {
+            "filename": "bias_variance_mlp_number_of_layers.csv",
+            "x_name": "number of layers",
+            "pretty_name": "Bias Variance-tradeoff MLP hidden layers",
+        },
+        {
+            "filename": "bias_variance_ensamble.csv",
+            "x_name": "depth",
+            "pretty_name": "Bias Variance-tradeoff Ensamble",
+        },
+    ]
+
+    for file_information in file_informations:
+        df = pd.read_csv(f"output/data/{file_information['filename']}")
+
+        x_values = [df[file_information["x_name"]].values for _ in range(2)]
+
+        biases = df["bias"].values
+        variances = df["variance"].values
+
+        line_plot(
+            f"{file_information['pretty_name']} Bias/Variance",
+            x_values,
+            [biases, variances],
+            ["bias", "variance"],
+            file_information["x_name"],
+            "Error",
+            filename=f"output/plots/{file_information['filename'][:-4]}_bias_variance",
+            show=show,
+        )
+
+        # Plot train and test mse
+        train_mse = df["mse_train"].values
+        test_mse = df["mse_test"].values
+
+        line_plot(
+            f"{file_information['pretty_name']} MSE",
+            x_values,
+            [train_mse, test_mse],
+            ["mse train", "mse test"],
+            file_information["x_name"],
+            "Error",
+            filename=f"output/plots/{file_information['filename'][:-4]}_mse",
+            show=show,
+        )
+
+
+def main():
+    output_model_performance()
+    make_bias_variance_plots(False)
