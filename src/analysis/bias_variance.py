@@ -65,7 +65,7 @@ def bias_variance_analysis_ols():
 def bias_variance_analysis_mlp_layer_size():
     mses_train, mses_test, biases, variances = [], [], [], []
     data = FrankeData(config.DATA_SIZE, test_size=config.BIAS_VARIANCE_TEST_SIZE)
-    layer_sizes = list(range(10, 100, 10))
+    layer_sizes = list(range(10, 110, 10))
     for layer_size in tqdm(layer_sizes):
         bias, variance, mse_train, mse_test = bootstrap_bias_variance(
             MLPRegressor(
@@ -121,7 +121,6 @@ def bias_variance_analysis_mlp_number_of_layers():
 def bias_variance_analysis_mlp():
     bias_variance_analysis_mlp_layer_size()
     bias_variance_analysis_mlp_number_of_layers()
-    #  plot(mses, biases, variances)
 
 
 def bias_variance_analysis_ensamble():
@@ -139,8 +138,6 @@ def bias_variance_analysis_ensamble():
         biases.append(bias)
         variances.append(variance)
 
-        #  tqdm.write(f"{depth} {bias} {variance} {mse_train} {mse_test}")
-
     write_to_file(
         "bias_variance_ensamble.csv",
         depths,
@@ -157,5 +154,5 @@ def main():
     print(f"Running with boostrap size: {config.BIAS_VARIANCE_BOOTSTRAP_SIZE}")
 
     bias_variance_analysis_ols()
-    #  bias_variance_analysis_mlp()
-    #  bias_variance_analysis_ensamble()
+    bias_variance_analysis_mlp()
+    bias_variance_analysis_ensamble()

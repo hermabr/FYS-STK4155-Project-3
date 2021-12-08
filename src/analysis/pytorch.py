@@ -5,108 +5,95 @@ from data import FallData
 from cnn.model import CNN, train, test
 import torch.optim as optim
 import matplotlib.pyplot as plt
+from plot import line_plot
+import config
 
 
-def train_model(data, num_epoch=150):
-    learning_rate = 0.002
-    momentum = 0.5
+def train_model(data, num_epoch=config.NUM_EPOCHS):
+    learning_rate = config.LEARNING_RATE
+    momentum = config.MOMENTUM
     loss_fn = nn.BCELoss()
 
-    model = CNN(channels=2)
+    model = CNN(channels=config.NUMBER_OF_CHANNELS)
     optimizer = optim.SGD(model.parameters(), lr=learning_rate, momentum=momentum)
     losses = []
 
     for epoch in tqdm(range(1, num_epoch + 1), leave=False, desc="Training"):
         train(model, data.train_loader, optimizer, loss_fn)
         if epoch % 10 == 0:
-            #  if epoch == num_epoch - 1:
             loss, accuracy, all_targets, all_predictions = test(
                 model, data.test_loader, epoch, loss_fn, verbose=False
             )
             losses.append(loss)
 
-            if accuracy >= 0.99:
-                #  tqdm.write("BROKE")
+            if accuracy == 0.99:
                 break
 
     return accuracy, losses, all_targets, all_predictions
 
 
 def main():
-    N = 20
-    TEST_SIZE = 0.2
-    SHOULD_TRANSFORM = True
+    learning_rate = config.LEARNING_RATE
+    momentum = config.MOMENTUM
+    loss_fn = nn.BCELoss()
+    model = CNN(channels=config.NUMBER_OF_CHANNELS)
+    optimizer = optim.SGD(model.parameters(), lr=learning_rate, momentum=momentum)
 
-    #  test_training(num_epoch=200)
+    NUM_EPOCHS = 100
+    SHOULD_TRANSFORM = True
+    EPOCHS = list(range(1, NUM_EPOCHS + 1))
+
+    losses = np.empty(NUM_EPOCHS)
+    accuracies = np.empty(NUM_EPOCHS)
+
     data = FallData(
-        test_size=TEST_SIZE,
+        test_size=config.TEST_SIZE,
         filepath="data/fall_adjusted",
-        batch_size=4,
-        resize=(64, 64),
+        batch_size=config.BATCH_SIZE,
+        resize=config.RESIZE,
         for_pytorch=True,
         transform=SHOULD_TRANSFORM,
     )
 
-    total_accuracy = 0
-    all_losses = []
-    for _ in range(N):
-        data = FallData(
-            test_size=TEST_SIZE,
-            filepath="data/fall_adjusted",
-            batch_size=4,
-            resize=(64, 64),
-            for_pytorch=True,
-            transform=SHOULD_TRANSFORM,
+    for epoch in tqdm(EPOCHS, leave=False, desc="Training"):
+        train(model, data.train_loader, optimizer, loss_fn)
+        loss, accuracy, all_targets, all_predictions = test(
+            model, data.test_loader, epoch, loss_fn, verbose=False
         )
+        losses[epoch - 1] = loss
+        accuracies[epoch - 1] = accuracy
 
-        accuracy, losses, all_targets, all_predictions = train_model(data, 200)
-        total_accuracy += accuracy
-        all_losses.append(losses)
+    losses = np.reshape(losses, (-1, config.GROUP_SIZE)).mean(axis=1)
+    accuracies = np.reshape(accuracies, (-1, config.GROUP_SIZE)).mean(axis=1)
 
-    print(f"Acc: {total_accuracy/N}")
-    #  for losses in all_losses:
-    #      plt.plot(losses)
-    #  plt.show()
+    line_plot(
+        "Loss CNN with data augmentation",
+        [
+            list(
+                range(
+                    config.GROUP_SIZE, NUM_EPOCHS + config.GROUP_SIZE, config.GROUP_SIZE
+                )
+            )
+        ],
+        [losses],
+        [""],
+        "epoch",
+        "loss",
+        filename="output/plots/loss_cnn",
+    )
 
-
-#  def test_training(num_epoch=1000):
-#      learning_rate = 0.01
-#      momentum = 0.5
-#      loss_fn = nn.BCELoss()
-#
-#      N = 10
-#      SHOULD_TRANSFORM = True
-#
-#      #  for test_size in np.arange(0.1, 1, 0.1):
-#      for test_size in [0.2]:
-#          total_accuracy = 0
-#          for _ in range(N):
-#              model = CNN(channels=2)
-#              optimizer = optim.SGD(
-#                  model.parameters(), lr=learning_rate, momentum=momentum
-#              )
-#
-#              data = FallData(
-#                  test_size=test_size,
-#                  filepath="data/fall_adjusted",
-#                  batch_size=4,
-#                  resize=(64, 64),
-#                  for_pytorch=True,
-#                  transform=SHOULD_TRANSFORM,
-#              )
-#
-#              for epoch in tqdm(range(1, num_epoch + 1), leave=False, desc="Training"):
-#                  train(model, data.train_loader, optimizer, loss_fn)
-#                  if epoch % 20 == 0:
-#                      loss, accuracy = test(
-#                          model, data.test_loader, epoch, loss_fn, verbose=False
-#                      )
-#                      if accuracy == 1:  # to speed up the process
-#                          break
-#
-#              total_accuracy += accuracy
-#              print(f"{test_size*100:.0f}%: {100*accuracy:.2f}%")
-#
-#          print(f"\nTotal: {test_size*100:.0f}%: {100*total_accuracy/N:.2f}%\n")
-#      print(f"Transform: {SHOULD_TRANSFORM}")
-#
+    line_plot(
+        "Accuracy CNN with data augmentation",
+        [
+            list(
+                range(
+                    config.GROUP_SIZE, NUM_EPOCHS + config.GROUP_SIZE, config.GROUP_SIZE
+                )
+            )
+        ],
+        [accuracies],
+        [""],
+        "epoch",
+        "accuracy",
+        filename="output/plots/accuracy_cnn",
+    )

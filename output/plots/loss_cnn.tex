@@ -1,0 +1,40 @@
+% This file was created with tikzplotlib v0.9.16.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{0.917647058823529,0.917647058823529,0.949019607843137}
+\definecolor{color1}{rgb}{0.298039215686275,0.447058823529412,0.690196078431373}
+
+\begin{axis}[
+width=12cm,height=8cm,axis background/.style={fill=color0},
+axis line style={white},
+tick align=outside,
+title={Loss CNN with data augmentation},
+x grid style={white},
+xlabel=\textcolor{white!15!black}{epoch},
+xmajorgrids,
+xmajorticks=true,
+xmin=5.5, xmax=104.5,
+xtick style={color=white!15!black},
+y grid style={white},
+ylabel=\textcolor{white!15!black}{loss},
+ymajorgrids,
+ymajorticks=true,
+ymin=-0.00271541063874545, ymax=0.123864549734237,
+ytick style={color=white!15!black}
+]
+\addplot [thick, color1]
+table {%
+10 0.11811089515686
+20 0.0293715000152588
+30 0.0187615156173706
+40 0.00706517696380615
+50 0.0077214241027832
+60 0.00816166400909424
+70 0.00364100933074951
+80 0.00426614284515381
+90 0.00427603721618652
+100 0.00303816795349121
+};
+\end{axis}
+
+\end{tikzpicture}
