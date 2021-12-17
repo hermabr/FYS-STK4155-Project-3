@@ -21,6 +21,27 @@ class FallData(Data):
         for_tensorflow=False,
         transform=True,
     ):
+        """Initialize the fall dataset.
+
+        Parameters
+        ----------
+            test_size : float
+                The percentage of the dataset to be used for testing.
+            scale_data : bool
+                Whether to scale the data to the range [0, 1].
+            resize : tuple
+                The size of the image to be resized.
+            filepath : str
+                The path to the dataset.
+            batch_size : int
+                The batch size to be used.
+            for_pytorch : bool
+                Whether to return the dataset for Pytorch.
+            for_tensorflow : bool
+                Whether to return the dataset for Tensorflow.
+            transform : bool
+                Whether to apply transformations to the data.
+        """
         super().__init__()
 
         assert test_size is not None, "test_size must be specified"
@@ -42,7 +63,6 @@ class FallData(Data):
         for i, filename in enumerate(filenames):
             for j in range(2):
                 motiongram_np = imageio.imread(os.path.join(filepath, filename[j]))
-                # only use one channel since the image is grayscale
                 motiongram_np = motiongram_np[:, :, 0]
                 motiongram_np = motiongram_np.astype(np.double)
                 motiongram_np = sk_resize(motiongram_np, resize)
@@ -68,6 +88,15 @@ class FallData(Data):
             self.create_train_test_loader(batch_size, transform)
 
     def create_csv(self, filepath, random_seed=42):
+        """Create a csv file with the filenames and labels.
+
+        Parameters
+        ----------
+            filepath : str
+                The path to the csv file.
+            random_seed : int
+                The random seed to be used.
+        """
         if random_seed:
             random.seed(random_seed)
 
@@ -91,29 +120,3 @@ class FallData(Data):
             random.shuffle(lines)
             for line in lines:
                 f.write(",".join(line) + "\n")
-
-    #  def __len__(self):
-    #      return len(self.X_train)
-    #
-    #  def __getitem__(self, idx):
-    #      if self.transform:
-    #          X = self.X_train[idx]
-    #
-    #          transformation = transforms.Compose(
-    #              [
-    #                  transforms.ToPILImage(),
-    #                  transforms.RandomHorizontalFlip(),
-    #                  transforms.RandomRotation(20),
-    #                  transforms.ToTensor(),
-    #                  #  transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225]),
-    #                  #  transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225]),
-    #                  transforms.Normalize([0.485, 0.456], [0.229, 0.224]),
-    #              ]
-    #          )
-    #
-    #          return transformation(X), self.y_train[idx]
-    #          #  for i in range(X.shape[0]):
-    #          #      X[i] = transformation(X[i])
-    #          #  return X, self.y_train[idx]
-    #
-    #      return self.X_train[idx], self.y_train[idx]

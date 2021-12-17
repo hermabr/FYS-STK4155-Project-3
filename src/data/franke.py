@@ -35,14 +35,6 @@ class FrankeData(Data):
 
         self.degree = degree
 
-        #  if random_positions:
-        #      data = np.random.rand(N * 2).reshape(N, 2)
-        #      x = np.sort(data[:, 0])
-        #      y = np.sort(data[:, 1])
-        #  else:
-        #      x = np.linspace(0, 1, N)
-        #      y = np.linspace(0, 1, N)
-
         data = np.random.rand(N * 2).reshape(N, 2)
         x = data[:, 0]
         y = data[:, 1]

@@ -9,6 +9,20 @@ from cnn.model import CNN, train, test
 
 
 def train_model(data, num_epoch=config.NUM_EPOCHS):
+    """Train the model
+
+    Parameters
+    ----------
+        data : PyTorch Dataset
+            The data to train on
+        num_epoch : int
+            The number of epochs to train for
+
+    Returns
+    -------
+        model : CNN
+            The trained model
+    """
     learning_rate = config.LEARNING_RATE
     momentum = config.MOMENTUM
     loss_fn = nn.BCELoss()
@@ -25,13 +39,11 @@ def train_model(data, num_epoch=config.NUM_EPOCHS):
             )
             losses.append(loss)
 
-            if accuracy == 1:
-                break
-
     return accuracy, losses, all_targets, all_predictions
 
 
 def main():
+    """Train the model and plot the results"""
     learning_rate = config.LEARNING_RATE
     momentum = config.MOMENTUM
     loss_fn = nn.BCELoss()

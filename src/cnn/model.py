@@ -7,6 +7,13 @@ import torch.nn.functional as F
 
 class CNN(nn.Module):
     def __init__(self, channels=1):
+        """Initialize the CNN
+
+        Parameters
+        ----------
+            channels : int
+                Number of channels in the input image (eg. 1 for grayscale and 3 for rgb)
+        """
         super(CNN, self).__init__()
 
         self.conv1 = nn.Conv2d(channels, 10, kernel_size=5, stride=1)
@@ -16,6 +23,18 @@ class CNN(nn.Module):
         self.fc2 = nn.Linear(64, 1)
 
     def forward(self, x):
+        """Forward pass of the CNN
+
+        Parameters
+        ----------
+            x : torch.Tensor
+                Input image
+
+        Returns
+        -------
+            torch.Tensor
+                Output of the CNN
+        """
         x = self.conv1(x)
         x = F.max_pool2d(x, 2)
         x = F.relu(x)
@@ -33,6 +52,19 @@ class CNN(nn.Module):
 
 
 def train(model, train_loader, optimizer, loss_fn):
+    """Train the model
+
+    Parameters
+    ----------
+        model : torch.nn.Module
+            Model to train
+        train_loader : torch.utils.data.DataLoader
+            DataLoader for the training set
+        optimizer : torch.optim.Optimizer
+            Optimizer to use for training
+        loss_fn : function
+            Loss function to use
+    """
     model.train()
     counter = 0
     for data, target in train_loader:
@@ -46,6 +78,26 @@ def train(model, train_loader, optimizer, loss_fn):
 
 
 def test(model, test_loader, epoch, loss_fn, verbose=False):
+    """Test the model
+
+    Parameters
+    ----------
+        model : torch.nn.Module
+            Model to test
+        test_loader : torch.utils.data.DataLoader
+            DataLoader for the test set
+        epoch : int
+            Current epoch
+        loss_fn : function
+            Loss function to use
+        verbose : bool
+            Whether to print the loss or not
+
+    Returns
+    -------
+        float
+            Loss of the model
+    """
     model.eval()
     test_loss = 0
     correct = 0

@@ -109,17 +109,12 @@ def line_plot(
 
 
 def output_model_performance():
+    """Outputs the model performance to a csv file"""
     filename, x_name = "test_size_performance.csv", "test_size"
 
     df = pd.read_csv(f"output/data/{filename}")
     x = df[x_name]
     y = df.loc[:, df.columns != x_name]
-
-    #  for feature in ["accuracy", "TPR", "TNR", "PPV", "NPV", "FPR", "FNR", "FDR", "F1"]:
-    #      for column in y.columns:
-    #          if feature in column:
-    #              print(column, df[column].mean())
-    #      print()
 
     features = ["accuracy", "TPR", "TNR", "PPV", "NPV", "FPR", "FNR", "FDR", "F1"]
     nice_features = ["Acc", "TPR", "TNR", "PPV", "NPV", "FPR", "FNR", "FDR", "F1"]
@@ -152,6 +147,13 @@ def output_model_performance():
 
 
 def make_bias_variance_plots(show):
+    """Makes the bias variance plots
+
+    Parameters
+    ----------
+        show : bool
+            Whether to show the plots
+    """
     file_informations = [
         {
             "filename": "bias_variance_ols.csv",

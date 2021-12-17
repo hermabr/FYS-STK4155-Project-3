@@ -1,7 +1,5 @@
 import torch
 import numpy as np
-
-#  import tensorflow as tf
 from sklearn.model_selection import train_test_split
 from data.pytorch_dataset import PytorchDataset
 from torch.utils.data import DataLoader
@@ -46,8 +44,6 @@ class Data:
             self._X = X
             self._y = y
         else:
-            #  diff = 3
-            #  while diff >= 2:
             (
                 self._X_train,
                 self._X_test,
@@ -56,10 +52,6 @@ class Data:
             ) = train_test_split(
                 X, y, test_size=test_size, stratify=y if stratify else None
             )
-
-            #  a = self._y_test
-            #  diff = np.abs(len(a) - a.sum() * 2)
-            #  print(a.sum(), len(a))
 
     def create_train_test_loader(self, batch_size, transform=True):
         """Creates a train and test loader for the data
@@ -98,46 +90,6 @@ class Data:
         self.test_loader = DataLoader(
             test_dataset, batch_size=batch_size, shuffle=False
         )
-
-        #  self.train_loader = torch.utils.data.DataLoader(
-        #      torch.utils.data.TensorDataset(self.X_train, self.y_train),
-        #      batch_size=batch_size,
-        #      shuffle=True,
-        #  )
-        #  self.test_loader = torch.utils.data.DataLoader(
-        #      torch.utils.data.TensorDataset(self.X_test, self.y_test),
-        #      batch_size=batch_size,
-        #      shuffle=True,
-        #  )
-        #  self.train_loader = train_loader
-        #  self.test_loader = test_loader
-
-    #  def create_train_test_loader_tensorflow(self, batch_size, shuffle_size=None):
-    #      """Creates a train and test loader for the data with tensorflow
-    #
-    #      Parameters
-    #      ----------
-    #          batch_size : int
-    #              The batch size for the data loader
-    #
-    #      Returns
-    #      -------
-    #          train_loader : tensorflow.data.Dataset
-    #              The train loader for the data
-    #          test_loader : tensorflow.data.Dataset
-    #              The test loader for the data
-    #      """
-    #      assert self.X_train is not None, "X_train is None"
-    #      if not shuffle_size:
-    #          shuffle_size = batch_size
-    #      self.train_dataset = (
-    #          tf.data.Dataset.from_tensor_slices((self.X_train, self.y_train))
-    #          .shuffle(shuffle_size)
-    #          .batch(batch_size)
-    #      )
-    #      self.test_dataset = tf.data.Dataset.from_tensor_slices(
-    #          (self.X_test, self.y_test)
-    #      ).batch(batch_size)
 
     def data_to_torch(self, X, y):
         """Converts the data to a torch tensor

@@ -3,11 +3,6 @@ import matplotlib.pyplot as plt
 
 from plot import line_plot
 
-#  filename, x_name = "bias_variance_ols.csv", "degree"
-#  filename, x_name = "bias_variance_mlp_layer_size.csv", "layer size"
-#  filename, x_name = "bias_variance_mlp_number_of_layers.csv", "number of layers"
-#  filename, x_name = "bias_variance_ensamble.csv", "depth"
-
 filename, x_name = "test_size_performance.csv", "test_size"
 
 df = pd.read_csv(f"output/data/{filename}")

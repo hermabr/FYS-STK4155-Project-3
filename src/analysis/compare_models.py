@@ -3,51 +3,98 @@ import numpy as np
 from tqdm import tqdm
 from data import FallData
 from analysis import pytorch
-
-#  from cnn.tensorflow import get_model
 from sklearn.neural_network import MLPClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import confusion_matrix
 
 
 def accuracy_metrics(y_true, y_pred):
+    """Compute accuracy metrics for a given set of predictions and labels.
+
+    Parameters
+    ----------
+        y_true : numpy.ndarray
+            The true labels.
+        y_pred : numpy.ndarray
+            The predicted labels.
+
+    Returns
+    -------
+        accuracy : float
+            The accuracy of the model.
+    """
     return sum(y_pred == y_true) / len(y_pred)
 
 
 def get_all_metrics(y_true, y_pred):
+    """Compute all metrics for a given set of predictions and labels.
+
+    Parameters
+    ----------
+        y_true : numpy.ndarray
+            The true labels.
+        y_pred : numpy.ndarray
+            The predicted labels.
+
+    Returns
+    -------
+        accuracy : float
+            The accuracy of the model.
+        True Positive Rate : float
+            The true positive rate of the model.
+        True Negative Rate : float
+            The true negative rate of the model.
+        Positive Predictive Value : float
+            The positive predictive value of the model.
+        Negative Predictive Value : float
+            The negative predictive value of the model.
+        False Positive Rate : float
+            The false positive rate of the model.
+        False Negative Rate : float
+            The false negative rate of the model.
+        False Discovery Rate : float
+            The false discovery rate of the model.
+        F1 Score : float
+            The F1 score of the model.
+    """
     TN_FP, FN_TP = confusion_matrix(y_true, y_pred)
     TN, FP = TN_FP
     FN, TP = FN_TP
 
-    # Sensitivity, hit rate, recall, or true positive rate
     TPR = TP / (TP + FN)
-    # Specificity or true negative rate
     TNR = TN / (TN + FP)
-    # Precision or positive predictive value
     PPV = TP / (TP + FP)
-    # Negative predictive value
     NPV = TN / (TN + FN)
-    # Fall out or false positive rate
     FPR = FP / (FP + TN)
-    # False negative rate
     FNR = FN / (TP + FN)
-    # False discovery rate
     FDR = FP / (TP + FP)
 
-    # Overall accuracy
     ACC = (TP + TN) / (TP + FP + FN + TN)
 
-    # F1 score
     F1 = 2 * PPV * TPR / (PPV + TPR)
 
     return f"{ACC},{TPR},{TNR},{PPV},{NPV},{FPR},{FNR},{FDR},{F1}"
 
 
 def write_out(name, accuracy):
+    """Write out the accuracy of the model to a file.
+
+    Parameters
+    ----------
+        name : str
+            The name of the model.
+        accuracy : float
+            The accuracy of the model.
+
+    Returns
+    -------
+        The accuracy in a nice string format
+    """
     return f"{float(accuracy)*100:6.2f}% "
 
 
 def main():
+    """Main function for the compare_models.py script."""
     accuracy_texts = []
     N = 1000
 
@@ -107,8 +154,8 @@ def main():
 
         accuracy_texts.append(accuracy_text)
 
+    # write the performance in the different metrics for the different models to a file
     with open("output/data/test_size_performance.csv", "w") as f:
-        #  f.write("test_size,logistic,cnn with transform,cnn without transform,ffnn\n")
         metric_text = "test_size,"
         for model_name in [
             "logistic",
@@ -128,9 +175,7 @@ def main():
                 "F1",
             ]:
                 metric_text += f"{model_name}_{metric_name},"
-                #  f.write(f"{model_name}_{metric_name}")
         f.write(metric_text[:-1] + "\n")
 
-        #  f.write("test_size,logistic,pytorch cnn,ffnn\n")
         for line in accuracy_texts:
             f.write(line + "\n")
